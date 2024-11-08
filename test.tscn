@@ -23,7 +23,7 @@ position = Vector2(245, 235)
 texture = ExtResource("2_iba4s")
 
 [node name="Window" type="Window" parent="."]
-position = Vector2i(50, 50)
+position = Vector2i(300, 300)
 size = Vector2i(200, 200)
 unresizable = true
 always_on_top = true
@@ -37,9 +37,18 @@ size = Vector2i(200, 200)
 script = ExtResource("2_sy362")
 myWindow = NodePath("../Window")
 
-[node name="Camera2D" type="Camera2D" parent="SubViewport"]
+[node name="Camera2D" type="Camera2D" parent="SubViewport" node_paths=PackedStringArray("myWindow")]
+position = Vector2(300, 300)
 script = ExtResource("2_s1fdw")
+myWindow = NodePath("../../Window")
 
 [node name="PointLight2D" type="PointLight2D" parent="SubViewport/Camera2D"]
-energy = 1.53
+energy = 1.5
 texture = ExtResource("1_iehrd")
+texture_scale = 0.6
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(739, 371)
+energy = 0.33
+texture = ExtResource("1_iehrd")
+texture_scale = 6.5
