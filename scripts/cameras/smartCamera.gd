@@ -1,14 +1,37 @@
 extends Camera2D
 
+@export var isStatic : bool = false
+@export var myWindow : Window
 
+@export var startingPosition: Vector2 = Vector2(300,300)
+
+var lastPosition : Vector2i
+
+var scaleFactor: float
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# GET THE RATIO OF BUILT IN DEF RESOLUTION TO CURRENT FULLSCREEN WINDOW RES
-	# MULTIPLY CAMERA ZOOM BY THIS RATIO
-	# NOW YOUR NVG IS CORRECT ALWAYS
-	pass
+	
+	scaleFactor = (float(DisplayServer.screen_get_size().x) / 1152)
+	
+	self.position=startingPosition
+	#myWindow.position=startingPosition+Vector2(35,35)
+	myWindow.position=startingPosition+Vector2(float(21*scaleFactor),float(21*scaleFactor))
+	
+	#print(float(21)*scaleFactor)
+	lastPosition = myWindow.position
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	if isStatic: return
+	if myWindow.position==lastPosition: return
+	
+	var newCamPosition = self.position + Vector2((myWindow.position.x-lastPosition.x), (myWindow.position.y-lastPosition.y)) / scaleFactor
+	self.position=newCamPosition
+	#self.position += Vector2((myWindow.position.x-lastPosition.x), (myWindow.position.y-lastPosition.y)) / scaleFactor
+	
+	#self.position==Vector2(myWindow.position.x, myWindow.position.y)
+	
+	lastPosition = myWindow.position
+	
+	

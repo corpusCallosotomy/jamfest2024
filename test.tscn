@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgah3i2xjivql"]
+[gd_scene load_steps=7 format=3 uid="uid://bgah3i2xjivql"]
 
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="1_iehrd"]
+[ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="2_2usd4"]
 [ext_resource type="Texture2D" uid="uid://gtjsudkjlu1s" path="res://sprites/HLwallpaper05_16x9.jpg" id="2_iba4s"]
 [ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="2_s1fdw"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_sy362"]
@@ -22,24 +23,44 @@ color = Color(0, 0, 0, 1)
 position = Vector2(245, 235)
 texture = ExtResource("2_iba4s")
 
-[node name="Window" type="Window" parent="."]
-position = Vector2i(50, 50)
+[node name="NightVision" type="Window" parent="."]
+position = Vector2i(300, 300)
 size = Vector2i(200, 200)
 unresizable = true
 always_on_top = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Window"]
+[node name="Sprite2D" type="Sprite2D" parent="NightVision"]
 texture = SubResource("ViewportTexture_i43hg")
 centered = false
 
-[node name="SubViewport" type="SubViewport" parent="." node_paths=PackedStringArray("myWindow")]
+[node name="ColorRect" type="ColorRect" parent="NightVision"]
+offset_right = 200.0
+offset_bottom = 200.0
+color = Color(0.377, 0.87, 0, 0.137255)
+
+[node name="Testcam" type="Sprite2D" parent="NightVision"]
+texture = ExtResource("2_2usd4")
+centered = false
+
+[node name="SubViewport" type="SubViewport" parent="." node_paths=PackedStringArray("myWindow", "myTint", "myOverlay")]
 size = Vector2i(200, 200)
 script = ExtResource("2_sy362")
-myWindow = NodePath("../Window")
+myWindow = NodePath("../NightVision")
+myTint = NodePath("../NightVision/ColorRect")
+myOverlay = NodePath("../NightVision/Testcam")
 
-[node name="Camera2D" type="Camera2D" parent="SubViewport"]
+[node name="Camera2D" type="Camera2D" parent="SubViewport" node_paths=PackedStringArray("myWindow")]
+position = Vector2(300, 300)
 script = ExtResource("2_s1fdw")
+myWindow = NodePath("../../NightVision")
 
 [node name="PointLight2D" type="PointLight2D" parent="SubViewport/Camera2D"]
-energy = 1.53
+energy = 1.5
 texture = ExtResource("1_iehrd")
+texture_scale = 0.6
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(739, 371)
+energy = 0.33
+texture = ExtResource("1_iehrd")
+texture_scale = 6.5
