@@ -5,9 +5,13 @@ extends Node2D
 @export var minimumPoint : float = self.position.y-167.5
 @export var maximumPoint : float = self.position.y+167.5
 
+@export var has_slider: bool = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Area2D.position.y = maximumPoint + (minimumPoint-maximumPoint) * $VSlider.value/100
+		$Area2D.position.y = maximumPoint + (minimumPoint-maximumPoint) * $VSlider.value/100
+		$VSlider.visible = has_slider
+		$Area2D/PointLight2D.visible = has_slider
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

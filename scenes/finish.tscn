@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://weyi04tb1lql"]
+
+[ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_kb4ko"]
+[ext_resource type="Script" path="res://scripts/elements/finish.gd" id="1_pa430"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lw1cv"]
+size = Vector2(64, 64)
+
+[node name="Finish" type="Area2D"]
+script = ExtResource("1_pa430")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lw1cv")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.484375, 0.484375)
+texture = ExtResource("1_kb4ko")
+
+[node name="winscreen" type="Node2D" parent="."]
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="winscreen"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2.46925, 2.46925)
+use_top_left = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="winscreen/CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="winscreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "A WINNER IS YOU"
+
+[node name="Button" type="Button" parent="winscreen/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "NEXT LEVEL"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="pressed" from="winscreen/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
