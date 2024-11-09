@@ -14,6 +14,7 @@ script = ExtResource("1_rn0b0")
 
 [node name="NightVision" type="Window" parent="."]
 auto_translate_mode = 1
+title = "S.H.O.D.I.M.E"
 position = Vector2i(0, 36)
 size = Vector2i(200, 200)
 unresizable = true
