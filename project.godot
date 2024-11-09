@@ -20,6 +20,7 @@ window/size/mode=4
 window/subwindows/embed_subwindows=false
 window/stretch/mode="viewport"
 
+
 [file_customization]
 
 folder_colors={
@@ -29,3 +30,8 @@ folder_colors={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+
+[global_group]
+
+ball=""
+

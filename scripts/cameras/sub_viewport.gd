@@ -1,6 +1,10 @@
 extends SubViewport
 
 @export var myWindow : Window
+@export var myTint : ColorRect
+@export var myOverlay : Sprite2D
+
+
 
 var scaleFactor : float
 # Called when the node enters the scene tree for the first time.
@@ -19,6 +23,9 @@ func getScaleFactor():
 	myWindow.size *= scaleFactor
 	self.size*=scaleFactor
 	$Camera2D.zoom*=scaleFactor
+
+	myTint.size*=scaleFactor
+	myOverlay.scale*=scaleFactor
 	#$Camera2D.scaleFactor = scaleFactor
 	
 	
