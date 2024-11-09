@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnjyar28e0fpr"]
+[gd_scene load_steps=5 format=3 uid="uid://cnjyar28e0fpr"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_500bu"]
+[ext_resource type="PackedScene" uid="uid://duxs6018xl4m1" path="res://phystest.tscn" id="2_1lnc2"]
 [ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_d4uhu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0a7c"]
@@ -13,24 +14,18 @@ expand_margin_top = 5.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
-[node name="Menu" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Menu" type="Node2D"]
 script = ExtResource("1_500bu")
+lvl1 = ExtResource("2_1lnc2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 100.0
-offset_top = -237.0
-offset_right = 200.0
-offset_bottom = -119.0
+offset_left = 62.0
+offset_top = 461.0
+offset_right = 162.0
+offset_bottom = 579.0
 grow_vertical = 0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
@@ -57,16 +52,15 @@ theme_override_fonts/font = ExtResource("2_d4uhu")
 text = "Quit"
 
 [node name="TextEdit" type="TextEdit" parent="."]
-layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -137.5
-offset_top = -174.0
-offset_right = 137.5
-offset_bottom = -124.0
+offset_left = 418.0
+offset_top = 212.0
+offset_right = 693.0
+offset_bottom = 262.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 3
