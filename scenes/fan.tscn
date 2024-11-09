@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://3jqgvtuyggbp"]
+[gd_scene load_steps=8 format=3 uid="uid://3jqgvtuyggbp"]
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_cmsqu"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_wvpoa"]
+[ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Fan.png" id="2_c3t2x"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_1lvi8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
@@ -30,11 +31,15 @@ script = ExtResource("1_cmsqu")
 
 [node name="Area2D" type="Area2D" parent="."]
 
+[node name="Fan" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_c3t2x")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(99.25, 0)
 shape = SubResource("RectangleShape2D_jvy4l")
 
 [node name="Icon" type="Sprite2D" parent="Area2D"]
+visible = false
 modulate = Color(0.5, 0, 0, 1)
 scale = Vector2(0.359375, 0.359375)
 texture = ExtResource("1_wvpoa")
