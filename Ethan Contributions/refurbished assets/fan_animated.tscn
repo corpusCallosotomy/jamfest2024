@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dc4ovytc2po4n"]
+
+[ext_resource type="Texture2D" uid="uid://7uwb18mre01b" path="res://Ethan Contributions/refurbished assets/FanSpritesheet.png" id="1_b1yn2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxas8"]
+atlas = ExtResource("1_b1yn2")
+region = Rect2(5, 5, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpwiv"]
+atlas = ExtResource("1_b1yn2")
+region = Rect2(74, 5, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fapcf"]
+atlas = ExtResource("1_b1yn2")
+region = Rect2(143, 5, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e88sh"]
+atlas = ExtResource("1_b1yn2")
+region = Rect2(212, 5, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hse0s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxas8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpwiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fapcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e88sh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="fan_animated" type="AnimatedSprite2D"]
+position = Vector2(-193, -159)
+sprite_frames = SubResource("SpriteFrames_hse0s")
+frame_progress = 0.0352246
+speed_scale = 3.0
