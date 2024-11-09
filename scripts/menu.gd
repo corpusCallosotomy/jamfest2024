@@ -13,8 +13,10 @@ func _process(delta: float) -> void:
 
 
 func _on_start_button_pressed() -> void:
+
 	get_tree().root.add_child(lvl1.instantiate())
 	queue_free()
+
 
 
 func _on_credits_button_pressed() -> void:
@@ -27,3 +29,19 @@ func _on_quit_button_pressed() -> void:
 
 func _on_back_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Menu.tscn")
+
+
+func _on_level_1_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://test.tscn")
+
+
+func _on_level_2_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://test.tscn")
+
+
+func _on_level_3_button_pressed() -> void:
+	get_tree().change_scene_to_file("rres://test.tscn")
+
+
+func _on_level_4_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://test.tscn")
