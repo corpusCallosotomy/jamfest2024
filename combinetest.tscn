@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://dcavmgiger00b"]
 
-[ext_resource type="Texture2D" uid="uid://gtjsudkjlu1s" path="res://sprites/HLwallpaper05_16x9.jpg" id="1_lyw2e"]
+[ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="1_lyw2e"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_28kv4"]
 [ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="2_ed1l0"]
 [ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_wm18s"]
