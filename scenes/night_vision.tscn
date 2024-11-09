@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/cameras/NightVisionArray.gd" id="1_rn0b0"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_3ey34"]
-[ext_resource type="Texture2D" uid="uid://bvx12uc0hhbtc" path="res://sprites/CameraOverlayPixelArt.png" id="2_usk05"]
+[ext_resource type="Texture2D" uid="uid://bmlbbgjwqy5of" path="res://sprites/CameraOverlayPixelArt.png" id="2_usk05"]
 [ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_sknw0"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_38fgl"]
 

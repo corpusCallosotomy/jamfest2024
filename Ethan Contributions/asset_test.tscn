@@ -36,7 +36,6 @@ texture = ExtResource("5_usylr")
 
 [node name="fan_animated" parent="." instance=ExtResource("6_3mix2")]
 position = Vector2(-264, -194)
-autoplay = "default"
 
 [node name="Vacuum2" type="Sprite2D" parent="."]
 position = Vector2(-156, -166)
