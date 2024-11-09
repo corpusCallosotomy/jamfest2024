@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://bmlbbgjwqy5of"
-
-path="res://.godot/imported/CameraOverlayPixelArt.png-a809618d0f5180540fce449fc7a661d3.ctex"
+uid="uid://bndqdu3tx4od6"
+path="res://.godot/imported/sfx.png-2029f6be0d1ba10744ac1c541d0eb304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/CameraOverlayPixelArt.png"
-dest_files=["res://.godot/imported/CameraOverlayPixelArt.png-a809618d0f5180540fce449fc7a661d3.ctex"]
+source_file="res://sprites/ui/sfx.png"
+dest_files=["res://.godot/imported/sfx.png-2029f6be0d1ba10744ac1c541d0eb304.ctex"]
 
 [params]
 

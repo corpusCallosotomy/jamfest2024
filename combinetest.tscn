@@ -1,20 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://dcavmgiger00b"]
+[gd_scene load_steps=8 format=3 uid="uid://dcavmgiger00b"]
 
+[ext_resource type="PackedScene" uid="uid://dp4u7ba8iovs2" path="res://scenes/night_vision.tscn" id="1_564k5"]
 [ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="1_lyw2e"]
-[ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_28kv4"]
-[ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="2_ed1l0"]
-[ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_wm18s"]
-[ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_hsd4n"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="5_rjtu3"]
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="6_2f1lt"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="8_iowqq"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="9_lxjui"]
 [ext_resource type="PackedScene" uid="uid://duxs6018xl4m1" path="res://phystest.tscn" id="10_nsnwi"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_o2ceo"]
-viewport_path = NodePath("Node2D/SubViewport")
-
 [node name="Node2D" type="Node2D"]
+
+[node name="NightVisionArray" parent="." instance=ExtResource("1_564k5")]
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -30,43 +26,6 @@ color = Color(0, 0, 0, 1)
 visible = false
 position = Vector2(245, 235)
 texture = ExtResource("1_lyw2e")
-
-[node name="Window" type="Window" parent="Node2D"]
-position = Vector2i(300, 300)
-size = Vector2i(200, 200)
-unresizable = true
-always_on_top = true
-
-[node name="Testcam" type="Sprite2D" parent="Node2D/Window"]
-z_index = 1
-texture = ExtResource("2_ed1l0")
-centered = false
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/Window"]
-texture = SubResource("ViewportTexture_o2ceo")
-centered = false
-
-[node name="ColorRect" type="ColorRect" parent="Node2D/Window"]
-offset_right = 200.0
-offset_bottom = 200.0
-color = Color(0.377, 0.87, 0, 0.137255)
-
-[node name="SubViewport" type="SubViewport" parent="Node2D" node_paths=PackedStringArray("myWindow", "myTint", "myOverlay")]
-size = Vector2i(200, 200)
-script = ExtResource("2_28kv4")
-myWindow = NodePath("../Window")
-myTint = NodePath("../Window/ColorRect")
-myOverlay = NodePath("../Window/Testcam")
-
-[node name="Camera2D" type="Camera2D" parent="Node2D/SubViewport" node_paths=PackedStringArray("myWindow")]
-position = Vector2(300, 300)
-script = ExtResource("3_wm18s")
-myWindow = NodePath("../../Window")
-
-[node name="PointLight2D" type="PointLight2D" parent="Node2D/SubViewport/Camera2D"]
-energy = 1.5
-texture = ExtResource("4_hsd4n")
-texture_scale = 0.6
 
 [node name="ball" parent="." instance=ExtResource("5_rjtu3")]
 position = Vector2(265, 192)
