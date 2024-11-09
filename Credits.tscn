@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyyxfw6nnl0a0"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_s8p2s"]
+[ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_my12b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0s8yb"]
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s8p2s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -182.0
+offset_right = 200.0
+offset_bottom = -97.0
+grow_vertical = 0
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_my12b")
+text = "Back
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_my12b")
+text = "Quit"
+
+[node name="EmployeeCredits" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.0
+offset_top = -189.0
+offset_right = 354.0
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 3
+theme_override_constants/line_spacing = 16
+theme_override_fonts/font = ExtResource("2_my12b")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_0s8yb")
+placeholder_text = "Maximilian Fowlkes - Programming and Design
+Joshua Sime - Production and Design
+Nathan Caruso - Art, Design, Music
+Jordan McGill - Designer, Artist
+Grace Dorl - Sound Effects
+Ethan Haynes - Artist, Designer"
+wrap_mode = 1
+
+[node name="AssetCredits" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -246.0
+offset_top = 35.625
+offset_right = 246.0
+offset_bottom = 265.625
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_constants/line_spacing = 16
+theme_override_fonts/font = ExtResource("2_my12b")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxTexture_0s8yb")
+placeholder_text = "Font https://www.dafont.com/better-vcr.font
+Asset long url.11.2.35.fd.sdf
+Asset long url.11.2.35.fd.sdf
+Asset long url.11.2.35.fd.sdf
+"
+wrap_mode = 1
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
