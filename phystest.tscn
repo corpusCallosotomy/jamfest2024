@@ -7,16 +7,15 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="ball" parent="." instance=ExtResource("1_ss8go")]
-position = Vector2(77, 151)
-linear_damp = 0.5
+position = Vector2(198, 188)
 
 [node name="fan" parent="." instance=ExtResource("2_r57gu")]
-position = Vector2(26, 151)
+position = Vector2(147, 188)
 
 [node name="vacuum" parent="." instance=ExtResource("3_0l3uv")]
-position = Vector2(80, 459)
+position = Vector2(201, 459)
 rotation = -1.5708
 
 [node name="vacuum2" parent="." instance=ExtResource("3_0l3uv")]
-position = Vector2(262, 591)
+position = Vector2(383, 591)
 rotation = -1.5708

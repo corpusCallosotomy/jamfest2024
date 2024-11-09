@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c5qo4nua7y3kc"
+path="res://.godot/imported/jam sfx - vacuum wip.wav-79a41e4d0c2c638d97788be27e20a218.sample"
+
+[deps]
+
+source_file="res://sounds/jam sfx - vacuum wip.wav"
+dest_files=["res://.godot/imported/jam sfx - vacuum wip.wav-79a41e4d0c2c638d97788be27e20a218.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
