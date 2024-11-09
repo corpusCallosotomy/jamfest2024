@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcavmgiger00b"]
+[gd_scene load_steps=10 format=3 uid="uid://dcavmgiger00b"]
 
 [ext_resource type="Texture2D" uid="uid://gtjsudkjlu1s" path="res://sprites/HLwallpaper05_16x9.jpg" id="1_lyw2e"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_28kv4"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_hsd4n"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="5_rjtu3"]
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="6_2f1lt"]
+[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="8_iowqq"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_o2ceo"]
 viewport_path = NodePath("Node2D/SubViewport")
@@ -35,6 +36,7 @@ unresizable = true
 always_on_top = true
 
 [node name="Testcam" type="Sprite2D" parent="Node2D/Window"]
+z_index = 1
 texture = ExtResource("2_ed1l0")
 centered = false
 
@@ -65,7 +67,11 @@ texture = ExtResource("4_hsd4n")
 texture_scale = 0.6
 
 [node name="ball" parent="." instance=ExtResource("5_rjtu3")]
-position = Vector2(265, 125)
+position = Vector2(265, 192)
 
 [node name="fan" parent="." instance=ExtResource("6_2f1lt")]
-position = Vector2(217, 122)
+position = Vector2(217, 189)
+
+[node name="vacuum" parent="." instance=ExtResource("8_iowqq")]
+position = Vector2(655, 306)
+rotation = -1.57079
