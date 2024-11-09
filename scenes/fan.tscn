@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://3jqgvtuyggbp"]
+[gd_scene load_steps=9 format=3 uid="uid://3jqgvtuyggbp"]
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_cmsqu"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_wvpoa"]
 [ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Fan.png" id="2_c3t2x"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_1lvi8"]
+[ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/refurbished assets/fan_animated.tscn" id="5_psipw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
@@ -31,7 +32,10 @@ script = ExtResource("1_cmsqu")
 
 [node name="Area2D" type="Area2D" parent="."]
 
+[node name="fan_animated" parent="Area2D" instance=ExtResource("5_psipw")]
+
 [node name="Fan" type="Sprite2D" parent="Area2D"]
+visible = false
 texture = ExtResource("2_c3t2x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -52,14 +56,14 @@ texture = ExtResource("1_wvpoa")
 lifetime = 0.3
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D"]
-position = Vector2(-40, 0)
+energy = 0.5
 texture = ExtResource("3_1lvi8")
 texture_scale = 0.46
 
 [node name="VSlider" type="VSlider" parent="."]
-offset_left = -48.0
+offset_left = -8.0
 offset_top = -175.0
-offset_right = -32.0
+offset_right = 8.0
 offset_bottom = 175.0
 theme_override_styles/slider = SubResource("StyleBoxLine_d5tvb")
 

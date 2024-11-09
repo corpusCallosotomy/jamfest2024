@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dp4u7ba8iovs2"]
 
-[ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="1_go0nf"]
 [ext_resource type="Script" path="res://scripts/cameras/NightVisionArray.gd" id="1_rn0b0"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_3ey34"]
+[ext_resource type="Texture2D" uid="uid://bvx12uc0hhbtc" path="res://sprites/CameraOverlayPixelArt.png" id="2_usk05"]
 [ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_sknw0"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_38fgl"]
 
@@ -28,8 +28,8 @@ offset_right = 200.0
 offset_bottom = 200.0
 color = Color(0.377, 0.87, 0, 0.137255)
 
-[node name="Testcam" type="Sprite2D" parent="NightVision"]
-texture = ExtResource("1_go0nf")
+[node name="CamOverlay" type="Sprite2D" parent="NightVision"]
+texture = ExtResource("2_usk05")
 centered = false
 
 [node name="SubViewport" type="SubViewport" parent="." node_paths=PackedStringArray("myWindow", "myTint", "myOverlay")]
@@ -37,7 +37,7 @@ size = Vector2i(200, 200)
 script = ExtResource("2_3ey34")
 myWindow = NodePath("../NightVision")
 myTint = NodePath("../NightVision/ColorRect")
-myOverlay = NodePath("../NightVision/Testcam")
+myOverlay = NodePath("../NightVision/CamOverlay")
 
 [node name="Camera2D" type="Camera2D" parent="SubViewport" node_paths=PackedStringArray("myWindow")]
 script = ExtResource("3_sknw0")
