@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://dcavmgiger00b"]
+
+[ext_resource type="Texture2D" uid="uid://gtjsudkjlu1s" path="res://sprites/HLwallpaper05_16x9.jpg" id="1_lyw2e"]
+[ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_28kv4"]
+[ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="2_ed1l0"]
+[ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_wm18s"]
+[ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_hsd4n"]
+[ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="5_rjtu3"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="6_2f1lt"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_o2ceo"]
+viewport_path = NodePath("Node2D/SubViewport")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1174.0
+offset_bottom = 669.0
+color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Node2D"]
+color = Color(0, 0, 0, 1)
+
+[node name="HLwallpaper0516x9" type="Sprite2D" parent="Node2D"]
+visible = false
+position = Vector2(245, 235)
+texture = ExtResource("1_lyw2e")
+
+[node name="Window" type="Window" parent="Node2D"]
+position = Vector2i(300, 300)
+size = Vector2i(200, 200)
+unresizable = true
+always_on_top = true
+
+[node name="Testcam" type="Sprite2D" parent="Node2D/Window"]
+texture = ExtResource("2_ed1l0")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Window"]
+texture = SubResource("ViewportTexture_o2ceo")
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/Window"]
+offset_right = 200.0
+offset_bottom = 200.0
+color = Color(0.377, 0.87, 0, 0.137255)
+
+[node name="SubViewport" type="SubViewport" parent="Node2D" node_paths=PackedStringArray("myWindow", "myTint", "myOverlay")]
+size = Vector2i(200, 200)
+script = ExtResource("2_28kv4")
+myWindow = NodePath("../Window")
+myTint = NodePath("../Window/ColorRect")
+myOverlay = NodePath("../Window/Testcam")
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/SubViewport" node_paths=PackedStringArray("myWindow")]
+position = Vector2(300, 300)
+script = ExtResource("3_wm18s")
+myWindow = NodePath("../../Window")
+
+[node name="PointLight2D" type="PointLight2D" parent="Node2D/SubViewport/Camera2D"]
+energy = 1.5
+texture = ExtResource("4_hsd4n")
+texture_scale = 0.6
+
+[node name="ball" parent="." instance=ExtResource("5_rjtu3")]
+position = Vector2(265, 125)
+
+[node name="fan" parent="." instance=ExtResource("6_2f1lt")]
+position = Vector2(217, 122)
