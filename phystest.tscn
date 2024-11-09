@@ -7,7 +7,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="ball" parent="." instance=ExtResource("1_ss8go")]
-position = Vector2(198, 188)
+position = Vector2(785, 217)
 
 [node name="fan" parent="." instance=ExtResource("2_r57gu")]
 position = Vector2(147, 188)
