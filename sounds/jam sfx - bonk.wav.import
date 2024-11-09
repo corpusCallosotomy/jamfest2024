@@ -2,7 +2,9 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://bn0u5gedpe5gs"
+
+uid="uid://b73bhlh7mcj6o"
+
 path="res://.godot/imported/jam sfx - bonk.wav-aec37086202c22595962f2387dfc3a14.sample"
 
 [deps]
