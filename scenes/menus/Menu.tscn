@@ -228,6 +228,7 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_f5q0a")
 text = "Quit"
 
+
 [connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Title/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="LevelSelect/BackButton" to="." method="_on_back_button_pressed"]
