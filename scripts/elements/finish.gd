@@ -5,7 +5,7 @@ extends Area2D
 
 @export var dimmer: CanvasModulate
 
-@export var menu: PackedScene
+#@export var mainmenu: PackedScene
 
 var pressed = false
 # Called when the node enters the scene tree for the first time.
@@ -37,8 +37,8 @@ func _on_body_entered(body):
 func _on_button_pressed():
 	#get_tree().change_scene_to_packed(nextLevelAddress)
 	
-	get_tree().root.add_child(nextLevelAddress.instantiate())
-	get_parent().queue_free()
+	get_tree().change_scene_to_packed(nextLevelAddress)
+	#get_parent().queue_free()
 
 
 
@@ -47,5 +47,5 @@ func _on_resume_pressed():
 
 
 func _on_title_pressed():
-	get_tree().root.add_child(menu.instantiate())
-	queue_free()
+	get_tree().change_scene_to_packed(load("res://scenes/menus/Menu.tscn"))
+	#get_parent().queue_free()
