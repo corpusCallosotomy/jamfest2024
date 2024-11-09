@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwqtxc4608rsh"]
+[gd_scene load_steps=4 format=3 uid="uid://dwqtxc4608rsh"]
 
+[ext_resource type="Texture2D" uid="uid://b74mb0djlihnu" path="res://Ethan Contributions/assets/Ball.png" id="1_rjqfp"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_rvcqx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nh35h"]
-radius = 20.0
+radius = 17.0
 
 [node name="ball" type="RigidBody2D" groups=["ball"]]
 gravity_scale = 0.0
@@ -12,6 +13,10 @@ linear_damp = 0.5
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_nh35h")
 
+[node name="Ball" type="Sprite2D" parent="."]
+texture = ExtResource("1_rjqfp")
+
 [node name="Icon" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_rvcqx")
