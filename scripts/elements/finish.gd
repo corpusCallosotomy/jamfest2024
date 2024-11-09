@@ -31,4 +31,7 @@ func _on_body_entered(body):
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_packed(nextLevelAddress)
+	#get_tree().change_scene_to_packed(nextLevelAddress)
+	
+	get_tree().root.add_child(nextLevelAddress.instantiate())
+	get_parent().queue_free()
