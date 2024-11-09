@@ -1,5 +1,6 @@
-extends Control
+extends Node2D
 
+@export var lvl1: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,7 +13,8 @@ func _process(delta: float) -> void:
 
 
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://test.tscn")
+	get_tree().root.add_child(lvl1.instantiate())
+	queue_free()
 
 
 func _on_credits_button_pressed() -> void:

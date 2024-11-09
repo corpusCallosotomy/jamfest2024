@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dp4u7ba8iovs2"]
+[gd_scene load_steps=7 format=3 uid="uid://dp4u7ba8iovs2"]
 
 [ext_resource type="Texture2D" uid="uid://b3uxvowpcsrgi" path="res://sprites/testcam.png" id="1_go0nf"]
+[ext_resource type="Script" path="res://scripts/cameras/NightVisionArray.gd" id="1_rn0b0"]
 [ext_resource type="Script" path="res://scripts/cameras/sub_viewport.gd" id="2_3ey34"]
 [ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_sknw0"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="4_38fgl"]
@@ -8,7 +9,8 @@
 [sub_resource type="ViewportTexture" id="ViewportTexture_i43hg"]
 viewport_path = NodePath("SubViewport")
 
-[node name="Node2D" type="Node2D"]
+[node name="NightVisionArray" type="Node2D"]
+script = ExtResource("1_rn0b0")
 
 [node name="NightVision" type="Window" parent="."]
 auto_translate_mode = 1
