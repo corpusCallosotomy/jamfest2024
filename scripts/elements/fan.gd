@@ -13,6 +13,7 @@ extends Node2D
 func _ready():
 	
 	$Area2D/CollisionShape2D.position.x = influenceLength/2
+	$Area2D/CollisionShape2D.shape.size.x = influenceLength
 	
 	$Area2D/GPUParticles2D.lifetime=influenceLength*(.3/240)
 	if fanForce<0:
