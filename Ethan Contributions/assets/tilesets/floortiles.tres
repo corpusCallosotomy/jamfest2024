@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dlo74butvd7vw"]
+
+[ext_resource type="Texture2D" uid="uid://bt1ttppw4rwop" path="res://Ethan Contributions/assets/Background Pattern.png" id="1_kb3s5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rn7j"]
+texture = ExtResource("1_kb3s5")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_6rn7j")
