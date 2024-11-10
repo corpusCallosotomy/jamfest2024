@@ -29,7 +29,8 @@ func _process(_delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		$options.global_position = Vector2(576, 150)
 		$options.visible = !$options.visible
-
+		
+		dimmer.visible = !dimmer.visible
 
 func _on_body_entered(body):
 	if pressed: return
@@ -55,6 +56,7 @@ func _on_button_pressed():
 
 func _on_resume_pressed():
 	$options.visible=false
+	dimmer.visible=true
 	buttonSFX.playing = true
 
 
