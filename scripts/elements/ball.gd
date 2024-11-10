@@ -14,7 +14,7 @@ func _process(_delta):
 
 func _on_body_entered(body):
 	print("body entered")
-	if body.is_in_group("spike"):
+	if body.is_in_group("spike") and self.is_in_group("player"):
 		print("it was a spike")
 		reset_state = true
 
