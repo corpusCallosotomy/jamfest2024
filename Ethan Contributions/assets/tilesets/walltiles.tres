@@ -1,10 +1,11 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://d2c752v8cxt3e"]
+[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://d2c752v8cxt3e"]
 
 [ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/Straight Spritesheet.png" id="1_ryiin"]
 [ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/Finish.png" id="2_0b6b0"]
 [ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/StraightSpikeSpirtesheet.png" id="3_5b20t"]
 [ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
 [ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/SpikeBaseSpritesheet.png" id="5_t8x1h"]
+[ext_resource type="Texture2D" uid="uid://uhhfrlxrqs8x" path="res://Ethan Contributions/assets/FinishTrafficSpritesheet.png" id="6_yiys5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_467lk"]
 texture = ExtResource("1_ryiin")
@@ -221,6 +222,28 @@ texture_region_size = Vector2i(32, 32)
 2:1/0 = 0
 3:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljn0k"]
+texture = ExtResource("6_yiys5")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 2
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/0 = 0
+0:1/animation_columns = 2
+0:1/animation_frame_0/duration = 1.0
+0:1/animation_frame_1/duration = 1.0
+0:1/0 = 0
+0:2/animation_columns = 2
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/0 = 0
+0:3/animation_columns = 2
+0:3/animation_frame_0/duration = 1.0
+0:3/animation_frame_1/duration = 1.0
+0:3/0 = 0
+
 [resource]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 3
@@ -229,3 +252,4 @@ sources/1 = SubResource("TileSetAtlasSource_hx52u")
 sources/2 = SubResource("TileSetAtlasSource_hotew")
 sources/3 = SubResource("TileSetAtlasSource_wtdtt")
 sources/5 = SubResource("TileSetAtlasSource_kbos6")
+sources/6 = SubResource("TileSetAtlasSource_ljn0k")

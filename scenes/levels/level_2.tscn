@@ -33,7 +33,7 @@ position = Vector2(80, 466)
 position = Vector2(701, 491)
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." index="8"]
-tile_map_data = PackedByteArray("AAAOAAcAAwAAAAAAAAAOAAgAAwAAAAEAAAAPAAgAAwAAAAIAAAAPAAcAAwAAAAMAAAA=")
+tile_map_data = PackedByteArray("AAAOAAcAAwAAAAAAAAAOAAgAAwAAAAEAAAAPAAgAAwAAAAIAAAAPAAcAAwAAAAMAAAAXAA0AAQAAAAAAAAAXAA4AAQAAAAAAAAAYAA4AAQAAAAAAAAAYAA0AAQAAAAAAAAA=")
 tile_set = ExtResource("2_xbrem")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." index="9"]
