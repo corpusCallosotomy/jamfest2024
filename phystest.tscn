@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="2_r57gu"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="3_0l3uv"]
 
+
 [node name="Node2D" type="Node2D"]
 
 [node name="ball" parent="." instance=ExtResource("1_ss8go")]

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="8_iowqq"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="9_lxjui"]
 
+
 [node name="Node2D" type="Node2D"]
 
 [node name="NightVisionArray" parent="." instance=ExtResource("1_564k5")]

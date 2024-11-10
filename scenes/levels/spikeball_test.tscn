@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="5_fuj0p"]
 [ext_resource type="PackedScene" uid="uid://bkh0gkqwggadn" path="res://Ethan Contributions/assets/interactables/spikeball_animation.tscn" id="6_nf0bm"]
 
+
 [node name="Level0" instance=ExtResource("1_m3i0r")]
 
 [node name="CanvasModulate" parent="." index="2"]

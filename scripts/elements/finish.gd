@@ -22,14 +22,19 @@ var MusIndex: int
 @export var buttonSFX : AudioStreamPlayer
 
 signal levelComplete
+signal titlePressed
+
+var hasQuit = false
 
 #@export var mainmenu: PackedScene
 
+# it's called pressed but it's for if the ball has already entered once
 var pressed = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	BGM.lockIn()
 	
+	hasQuit=false
 	
 	SFXIndex = AudioServer.get_bus_index(SFXName)
 	MusIndex = AudioServer.get_bus_index(MusName)
@@ -86,7 +91,10 @@ func _on_resume_pressed():
 
 
 func _on_title_pressed():
-	get_tree().change_scene_to_file("res://scenes/menus/Menu.tscn")
+	#get_tree().change_scene_to_file("res://scenes/menus/Menu.tscn")
+	if hasQuit: return
+	hasQuit=true
+	titlePressed.emit()
 	#get_parent().queue_free()
 
 

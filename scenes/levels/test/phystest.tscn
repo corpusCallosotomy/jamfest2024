@@ -10,7 +10,7 @@
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_b384a")
-nextLevelAddress = "test/combinetest"
+nextLevelAddress = "test/spiketest"
 NV_start_position = Vector2(500, 1000)
 
 [node name="ball" parent="." instance=ExtResource("1_g4u4i")]
