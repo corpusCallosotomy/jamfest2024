@@ -9,9 +9,12 @@ extends SubViewport
 var scaleFactor : float
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.set_world_2d(get_tree().root.get_world_2d())
+	pass
 
+func subViewportBootup():
+	self.set_world_2d(get_tree().root.get_world_2d())
 	getScaleFactor()
+
 
 func getScaleFactor():
 	#print(DisplayServer.screen_get_size())

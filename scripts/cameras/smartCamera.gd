@@ -3,7 +3,7 @@ extends Camera2D
 @export var isStatic : bool = false
 @export var myWindow : Window
 
-var startingPosition: Vector2 = Vector2(300,300)
+var startingPosition: Vector2 #= Vector2(300,300)
 
 var lastPosition : Vector2i
 
@@ -28,6 +28,15 @@ func bootup():
 	
 	#print(float(21)*scaleFactor)
 	lastPosition = myWindow.position
+
+
+
+func pause():
+	process_mode = PROCESS_MODE_DISABLED
+
+func unpause():
+	process_mode = PROCESS_MODE_INHERIT
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

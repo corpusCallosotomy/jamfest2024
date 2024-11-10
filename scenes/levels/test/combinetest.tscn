@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcavmgiger00b"]
+[gd_scene load_steps=7 format=3 uid="uid://dcavmgiger00b"]
 
 [ext_resource type="PackedScene" uid="uid://dp4u7ba8iovs2" path="res://scenes/night_vision.tscn" id="1_564k5"]
 [ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="1_lyw2e"]
@@ -9,9 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://duxs6018xl4m1" path="res://phystest.tscn" id="10_nsnwi"]
 
 
-[node name="Node2D" type="Node2D"]
 
-[node name="NightVisionArray" parent="." instance=ExtResource("1_564k5")]
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_byaxt")
+nextLevelAddress = "test/phystest"
+NV_start_position = Vector2(300, 300)
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -19,6 +21,7 @@
 offset_right = 1174.0
 offset_bottom = 669.0
 color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Node2D"]
 color = Color(0, 0, 0, 1)
@@ -26,20 +29,24 @@ color = Color(0, 0, 0, 1)
 [node name="HLwallpaper0516x9" type="Sprite2D" parent="Node2D"]
 visible = false
 position = Vector2(245, 235)
-texture = ExtResource("1_lyw2e")
+texture = ExtResource("2_uqshc")
 
-[node name="ball" parent="." instance=ExtResource("5_rjtu3")]
+[node name="ball" parent="." instance=ExtResource("3_s4xaj")]
 position = Vector2(265, 192)
 
-[node name="fan" parent="." instance=ExtResource("6_2f1lt")]
+[node name="fan" parent="." instance=ExtResource("4_iuptt")]
 position = Vector2(217, 189)
 
-[node name="vacuum" parent="." instance=ExtResource("8_iowqq")]
+[node name="vacuum" parent="." instance=ExtResource("5_8oc8f")]
 position = Vector2(655, 306)
 rotation = -1.57079
 has_slider = false
 
-[node name="Finish" parent="." node_paths=PackedStringArray("dimmer") instance=ExtResource("9_lxjui")]
+[node name="Finish" parent="." node_paths=PackedStringArray("dimmer") instance=ExtResource("6_g5323")]
 position = Vector2(573, 181)
-nextLevelAddress = ExtResource("10_nsnwi")
 dimmer = NodePath("../Node2D/CanvasModulate")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.31
+
+[connection signal="levelComplete" from="Finish" to="." method="_on_finish_level_complete"]
