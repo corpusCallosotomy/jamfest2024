@@ -56,7 +56,6 @@ layout_mode = 2
 text = "NEXT LEVEL"
 
 [node name="options" type="Node2D" parent="."]
-visible = false
 top_level = true
 light_mask = 4
 visibility_layer = 4
