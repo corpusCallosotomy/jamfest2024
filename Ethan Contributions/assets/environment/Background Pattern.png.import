@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwvc5la5ldkbo"
-path="res://.godot/imported/Vacuum.png-1c885deff113631741b3b0b9cf733ff2.ctex"
+uid="uid://bt1ttppw4rwop"
+path="res://.godot/imported/Background Pattern.png-e5cd6febe5bd759c78e130b1687a4109.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Vacuum.png"
-dest_files=["res://.godot/imported/Vacuum.png-1c885deff113631741b3b0b9cf733ff2.ctex"]
+source_file="res://Ethan Contributions/assets/environment/Background Pattern.png"
+dest_files=["res://.godot/imported/Background Pattern.png-e5cd6febe5bd759c78e130b1687a4109.ctex"]
 
 [params]
 

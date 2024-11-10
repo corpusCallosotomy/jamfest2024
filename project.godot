@@ -28,7 +28,11 @@ window/stretch/mode="viewport"
 [file_customization]
 
 folder_colors={
-"res://Ethan Contributions/": "teal"
+"res://Ethan Contributions/": "teal",
+"res://Ethan Contributions/assets/": "teal",
+"res://Ethan Contributions/assets/A_player ball/": "orange",
+"res://Ethan Contributions/assets/Z_overwritten/": "red",
+"res://Ethan Contributions/assets/tilesets/": "purple"
 }
 
 [global_group]

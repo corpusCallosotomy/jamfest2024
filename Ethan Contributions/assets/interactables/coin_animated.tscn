@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://cirjp4ul5rqfd"]
 
-[ext_resource type="Texture2D" uid="uid://dgh4jx1465jke" path="res://Ethan Contributions/assets/ChallengeCoin.png" id="1_towg5"]
+[ext_resource type="Texture2D" uid="uid://dgh4jx1465jke" path="res://Ethan Contributions/assets/interactables/ChallengeCoin.png" id="1_towg5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7wigp"]
 atlas = ExtResource("1_towg5")

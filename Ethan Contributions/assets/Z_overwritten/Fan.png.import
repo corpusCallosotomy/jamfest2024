@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1o1p00td41if"
-path="res://.godot/imported/Straight Spritesheet.png-0f59506d9133f640fb054457582d0767.ctex"
+uid="uid://dn84yvuawin37"
+path="res://.godot/imported/Fan.png-eec09d8b39551ff8a4ff6be0de324cbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Straight Spritesheet.png"
-dest_files=["res://.godot/imported/Straight Spritesheet.png-0f59506d9133f640fb054457582d0767.ctex"]
+source_file="res://Ethan Contributions/assets/Z_overwritten/Fan.png"
+dest_files=["res://.godot/imported/Fan.png-eec09d8b39551ff8a4ff6be0de324cbb.ctex"]
 
 [params]
 

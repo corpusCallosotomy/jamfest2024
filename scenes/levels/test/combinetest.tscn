@@ -1,15 +1,19 @@
 [gd_scene load_steps=7 format=3 uid="uid://dcavmgiger00b"]
 
-[ext_resource type="PackedScene" uid="uid://dp4u7ba8iovs2" path="res://scenes/night_vision.tscn" id="1_hxgmd"]
-[ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="2_uqshc"]
-[ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_s4xaj"]
-[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="4_iuptt"]
-[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="5_8oc8f"]
-[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="6_g5323"]
+[ext_resource type="PackedScene" uid="uid://dp4u7ba8iovs2" path="res://scenes/night_vision.tscn" id="1_564k5"]
+[ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="1_lyw2e"]
+[ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="5_rjtu3"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://Ethan Contributions/assets/interactables/fan.tscn" id="6_2f1lt"]
+[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="8_iowqq"]
+[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="9_lxjui"]
+[ext_resource type="PackedScene" uid="uid://duxs6018xl4m1" path="res://phystest.tscn" id="10_nsnwi"]
+
+
 
 [node name="Node2D" type="Node2D"]
-
-[node name="NightVisionArray" parent="." instance=ExtResource("1_hxgmd")]
+script = ExtResource("1_byaxt")
+nextLevelAddress = "test/phystest"
+NV_start_position = Vector2(300, 300)
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -17,6 +21,7 @@
 offset_right = 1174.0
 offset_bottom = 669.0
 color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Node2D"]
 color = Color(0, 0, 0, 1)
@@ -39,5 +44,9 @@ has_slider = false
 
 [node name="Finish" parent="." node_paths=PackedStringArray("dimmer") instance=ExtResource("6_g5323")]
 position = Vector2(573, 181)
-nextLevelAddress = "test/phystest"
 dimmer = NodePath("../Node2D/CanvasModulate")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.31
+
+[connection signal="levelComplete" from="Finish" to="." method="_on_finish_level_complete"]

@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_8d0nf"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="2_3bok2"]
-[ext_resource type="Texture2D" uid="uid://oc1nebab3iqu" path="res://Ethan Contributions/refurbished assets/Vacuum.png" id="2_sbvpf"]
+[ext_resource type="Texture2D" uid="uid://oc1nebab3iqu" path="res://Ethan Contributions/assets/interactables/Vacuum.png" id="2_sbvpf"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_d6d0q"]
 [ext_resource type="Texture2D" uid="uid://dgxwq0j8vq0yh" path="res://sprites/AirDustParticle.png" id="4_yasmt"]
 [ext_resource type="AudioStream" uid="uid://dy5j0c0fswak5" path="res://sounds/jam sfx _ vacuumFinal.ogg" id="5_stjmf"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="6_abvqa"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
@@ -58,7 +59,7 @@ texture = ExtResource("4_yasmt")
 lifetime = 0.3
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D"]
-energy = 0.0
+energy = 0.5
 texture = ExtResource("3_d6d0q")
 texture_scale = 0.46
 

@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://b1a1o5len8chq"
-
-path="res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"
+uid="uid://cwvc5la5ldkbo"
+path="res://.godot/imported/Vacuum.png-1a74ccd634b4869699f2f2782821f8a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/BallShardParticle.png"
-dest_files=["res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"]
+source_file="res://Ethan Contributions/assets/Z_overwritten/Vacuum.png"
+dest_files=["res://.godot/imported/Vacuum.png-1a74ccd634b4869699f2f2782821f8a1.ctex"]
 
 [params]
 

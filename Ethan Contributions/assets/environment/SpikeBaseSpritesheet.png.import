@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn84yvuawin37"
-path="res://.godot/imported/Fan.png-6505be0c1476e77e33646ee7849243ff.ctex"
+uid="uid://cx1c0ygjw10ce"
+path="res://.godot/imported/SpikeBaseSpritesheet.png-1a05af228b416848b87f27a51d9a9fc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Fan.png"
-dest_files=["res://.godot/imported/Fan.png-6505be0c1476e77e33646ee7849243ff.ctex"]
+source_file="res://Ethan Contributions/assets/environment/SpikeBaseSpritesheet.png"
+dest_files=["res://.godot/imported/SpikeBaseSpritesheet.png-1a05af228b416848b87f27a51d9a9fc8.ctex"]
 
 [params]
 

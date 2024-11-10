@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://b1a1o5len8chq"
-
-path="res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"
+uid="uid://7uwb18mre01b"
+path="res://.godot/imported/FanSpritesheet.png-30c3d31318be02f8efeaf3651fba0c6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/BallShardParticle.png"
-dest_files=["res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/FanSpritesheet.png"
+dest_files=["res://.godot/imported/FanSpritesheet.png-30c3d31318be02f8efeaf3651fba0c6f.ctex"]
 
 [params]
 

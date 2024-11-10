@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dwqtxc4608rsh"]
 
 [ext_resource type="Script" path="res://scripts/elements/ball.gd" id="1_l66w0"]
-[ext_resource type="Texture2D" uid="uid://b74mb0djlihnu" path="res://Ethan Contributions/assets/Ball.png" id="1_rjqfp"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_rvcqx"]
+[ext_resource type="Texture2D" uid="uid://bmg5b333kuhjh" path="res://Ethan Contributions/assets/A_player ball/BallIdle.png" id="2_fyox8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nh35h"]
 radius = 17.0
@@ -16,10 +16,11 @@ linear_damp = 0.5
 script = ExtResource("1_l66w0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.88, 0.88)
 shape = SubResource("CircleShape2D_nh35h")
 
 [node name="Ball" type="Sprite2D" parent="."]
-texture = ExtResource("1_rjqfp")
+texture = ExtResource("2_fyox8")
 
 [node name="Icon" type="Sprite2D" parent="."]
 visible = false

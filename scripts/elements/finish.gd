@@ -7,19 +7,21 @@ var MusIndex: int
 
 
 #@export var thisLevelAddress: String = "level_1"
-var levelAddressHeader : String = "res://scenes/levels/"
+#var levelAddressHeader : String = "res://scenes/levels/"
 #var fullLevelAddress : String
 #var fullLevelScene
 
 
 #@export var nextLevelAddress: PackedScene
 
-@export var nextLevelAddress: String = "level_2"
-var fullNextScene : String
+#@export var nextLevelAddress: String = "level_2"
+#var fullNextScene : String
 
 @export var dimmer: CanvasModulate
 
 @export var buttonSFX : AudioStreamPlayer
+
+signal levelComplete
 
 #@export var mainmenu: PackedScene
 
@@ -38,7 +40,7 @@ func _ready():
 	$reset/TextureButton.modulate=Color(1,1,1,0.1)
 	
 	#fullLevelAddress = levelAddressHeader+thisLevelAddress+".tscn"
-	fullNextScene = levelAddressHeader+nextLevelAddress+".tscn"
+	#fullNextScene = levelAddressHeader+nextLevelAddress+".tscn"
 	
 	
 	#await get_tree().create_timer(10).timeout
@@ -70,7 +72,8 @@ func _on_body_entered(body):
 func _on_button_pressed():
 	#get_tree().change_scene_to_packed(nextLevelAddress)
 	
-	get_tree().change_scene_to_file(fullNextScene)
+	levelComplete.emit()
+	#get_tree().change_scene_to_file(fullNextScene)
 	
 	#get_parent().queue_free()
 

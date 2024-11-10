@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://b1a1o5len8chq"
-
-path="res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"
+uid="uid://dgh4jx1465jke"
+path="res://.godot/imported/ChallengeCoin.png-52a3a553d4e7a512b3255bf25d2789b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/BallShardParticle.png"
-dest_files=["res://.godot/imported/BallShardParticle.png-cada3d53bc919ccaf2156858b985971a.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/ChallengeCoin.png"
+dest_files=["res://.godot/imported/ChallengeCoin.png-52a3a553d4e7a512b3255bf25d2789b2.ctex"]
 
 [params]
 
