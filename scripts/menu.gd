@@ -90,3 +90,29 @@ func _on_level_3_texture_button_pressed() -> void:
 func _on_level_4_texture_button_pressed() -> void:
 	buttonSFX.playing = true
 	get_tree().change_scene_to_packed(lvl4)
+
+
+func _on_quit_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	get_tree().quit()
+
+
+func _on_back_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	Menu.show()
+	LevelSelect.hide()
+	Credits.hide()
+
+
+func _on_credits_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	Credits.show()
+	Menu.hide()
+	LevelSelect.hide()
+
+
+func _on_start_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	LevelSelect.show()
+	Menu.hide()
+	Credits.hide()
