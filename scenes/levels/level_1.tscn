@@ -8,9 +8,6 @@
 
 [node name="Level0" instance=ExtResource("1_wm8j4")]
 
-[node name="CanvasModulate" parent="." index="1"]
-visible = false
-
 [node name="Finish" parent="." index="2"]
 position = Vector2(928, 352)
 scale = Vector2(0.6, 0.6)
