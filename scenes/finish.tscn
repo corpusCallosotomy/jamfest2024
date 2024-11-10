@@ -1,23 +1,39 @@
-[gd_scene load_steps=9 format=3 uid="uid://weyi04tb1lql"]
+[gd_scene load_steps=14 format=3 uid="uid://weyi04tb1lql"]
 
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_kb4ko"]
 [ext_resource type="Script" path="res://scripts/elements/finish.gd" id="1_pa430"]
 [ext_resource type="Texture2D" uid="uid://ckty3mf8pugv7" path="res://sprites/ui/paused.png" id="3_npj4e"]
 [ext_resource type="Texture2D" uid="uid://oep01r1ii58u" path="res://sprites/ui/resume.png" id="4_1q3yk"]
 [ext_resource type="Texture2D" uid="uid://145q7sblilc8" path="res://sprites/ui/music.png" id="4_qmmra"]
+[ext_resource type="Texture2D" uid="uid://yowkbvdkwpic" path="res://sprites/OptionsSlider.png" id="5_j8f77"]
 [ext_resource type="Texture2D" uid="uid://bndqdu3tx4od6" path="res://sprites/ui/sfx.png" id="5_jffev"]
 [ext_resource type="Texture2D" uid="uid://d032otk34he2e" path="res://sprites/ui/title.png" id="7_54qhk"]
+[ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="8_5k73y"]
+[ext_resource type="Texture2D" uid="uid://cnax223v1xk1l" path="res://sprites/ui/reset.png" id="10_yvlnm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lw1cv"]
-size = Vector2(64, 64)
+size = Vector2(128, 128)
 
-[node name="Finish" type="Area2D"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ga1pg"]
+color = Color(0.376471, 0.376471, 0.376471, 1)
+thickness = 2
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_xelq7"]
+color = Color(0.376471, 0.376471, 0.376471, 1)
+thickness = 2
+
+[node name="Finish" type="Area2D" node_paths=PackedStringArray("buttonSFX")]
+z_index = 2
 script = ExtResource("1_pa430")
+SFXName = "SFX"
+MusName = "Music"
+buttonSFX = NodePath("options/AudioStreamPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_lw1cv")
 
 [node name="Icon" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(0.484375, 0.484375)
 texture = ExtResource("1_kb4ko")
 
@@ -41,38 +57,59 @@ text = "A WINNER IS YOU"
 layout_mode = 2
 text = "NEXT LEVEL"
 
-[node name="options" type="Node2D" parent="."]
+[node name="options" type="CanvasLayer" parent="."]
 visible = false
-light_mask = 4
-position = Vector2(576, 150)
+
+[node name="ColorRect" type="ColorRect" parent="options"]
+offset_left = -23.0
+offset_top = -31.0
+offset_right = 1227.0
+offset_bottom = 689.0
+color = Color(0, 0, 0, 1)
 
 [node name="Paused" type="Sprite2D" parent="options"]
+position = Vector2(576, 96)
 texture = ExtResource("3_npj4e")
 
 [node name="Music" type="Sprite2D" parent="options"]
-position = Vector2(0, 120.5)
+position = Vector2(576, 216.5)
 texture = ExtResource("4_qmmra")
 
 [node name="HSlider" type="HSlider" parent="options"]
-offset_left = -250.0
-offset_top = 163.5
-offset_right = 250.0
-offset_bottom = 179.5
+offset_left = 326.0
+offset_top = 259.5
+offset_right = 826.0
+offset_bottom = 291.5
+theme_override_icons/grabber = ExtResource("5_j8f77")
+theme_override_icons/grabber_highlight = ExtResource("5_j8f77")
+theme_override_icons/grabber_disabled = ExtResource("5_j8f77")
+theme_override_icons/tick = ExtResource("5_j8f77")
+theme_override_styles/slider = SubResource("StyleBoxLine_ga1pg")
+min_value = -40.0
+max_value = 0.0
 
 [node name="Sfx" type="Sprite2D" parent="options"]
-position = Vector2(0, 231.5)
+position = Vector2(576, 327.5)
 texture = ExtResource("5_jffev")
 
 [node name="HSlider2" type="HSlider" parent="options"]
-offset_left = -250.0
-offset_top = 283.5
-offset_right = 250.0
-offset_bottom = 299.5
+offset_left = 326.0
+offset_top = 379.5
+offset_right = 826.0
+offset_bottom = 411.5
+theme_override_icons/grabber = ExtResource("5_j8f77")
+theme_override_icons/grabber_highlight = ExtResource("5_j8f77")
+theme_override_icons/grabber_disabled = ExtResource("5_j8f77")
+theme_override_icons/tick = ExtResource("5_j8f77")
+theme_override_styles/slider = SubResource("StyleBoxLine_xelq7")
+min_value = -40.0
+max_value = 0.0
 
 [node name="CenterContainer" type="CenterContainer" parent="options"]
-offset_top = 355.0
-offset_right = 286.0
-offset_bottom = 436.0
+offset_left = 576.0
+offset_top = 465.0
+offset_right = 862.0
+offset_bottom = 546.0
 use_top_left = true
 
 [node name="Resume" type="TextureButton" parent="options/CenterContainer"]
@@ -83,9 +120,10 @@ texture_hover = ExtResource("4_1q3yk")
 texture_focused = ExtResource("4_1q3yk")
 
 [node name="CenterContainer2" type="CenterContainer" parent="options"]
-offset_top = 451.0
-offset_right = 286.0
-offset_bottom = 532.0
+offset_left = 576.0
+offset_top = 579.0
+offset_right = 862.0
+offset_bottom = 660.0
 use_top_left = true
 
 [node name="Title" type="TextureButton" parent="options/CenterContainer2"]
@@ -95,7 +133,26 @@ texture_pressed = ExtResource("7_54qhk")
 texture_hover = ExtResource("7_54qhk")
 texture_focused = ExtResource("7_54qhk")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="options"]
+stream = ExtResource("8_5k73y")
+bus = &"SFX"
+
+[node name="reset" type="CanvasLayer" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="reset"]
+modulate = Color(1, 1, 1, 0.1)
+light_mask = 4
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("10_yvlnm")
+metadata/_edit_use_anchors_ = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="pressed" from="winscreen/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="options/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="options/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="pressed" from="options/CenterContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="options/CenterContainer2/Title" to="." method="_on_title_pressed"]
+[connection signal="mouse_entered" from="reset/TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="reset/TextureButton" to="." method="_on_texture_button_mouse_exited"]
+[connection signal="pressed" from="reset/TextureButton" to="." method="_on_texture_button_pressed"]
