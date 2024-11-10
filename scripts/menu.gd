@@ -11,6 +11,8 @@ extends Node2D
 @export var lvl5 : PackedScene
 @export var lvl6 : PackedScene
 @export var lvl7 : PackedScene
+@export var lvl8 : PackedScene
+@export var lvl9 : PackedScene
 
 @export var buttonSFX : AudioStreamPlayer
 
@@ -96,4 +98,18 @@ func _on_level_7_texture_button_pressed() -> void:
 	buttonSFX.playing = true
 	var lvl7instance = lvl7.instantiate()
 	get_tree().root.add_child(lvl7instance)
+	queue_free()
+
+
+func _on_level_8_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	var lvl8instance = lvl8.instantiate()
+	get_tree().root.add_child(lvl8instance)
+	queue_free()
+
+
+func _on_level_9_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	var lvl9instance = lvl9.instantiate()
+	get_tree().root.add_child(lvl9instance)
 	queue_free()

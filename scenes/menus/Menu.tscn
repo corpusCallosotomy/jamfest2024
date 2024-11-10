@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cnjyar28e0fpr"]
+[gd_scene load_steps=21 format=4 uid="uid://cnjyar28e0fpr"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_1sesr"]
 [ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_b762y"]
@@ -14,7 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://bfiiv2rw5jaeb" path="res://scenes/levels/nathan_unordered_2.tscn" id="6_fgdml"]
 [ext_resource type="PackedScene" uid="uid://d368j68bdybak" path="res://scenes/levels/unordered_lvl_1.tscn" id="7_4qf4y"]
 [ext_resource type="PackedScene" uid="uid://jhiwuwt6uql2" path="res://scenes/levels/unordered_lvl_2.tscn" id="8_cg5qe"]
+[ext_resource type="PackedScene" uid="uid://cu4a3gpo3ichk" path="res://scenes/levels/unordered_lvl_pachinko.tscn" id="9_8dxxw"]
 [ext_resource type="Texture2D" uid="uid://b0qjr5on1l7vo" path="res://sprites/ui/quitFinal.png" id="9_38eew"]
+[ext_resource type="PackedScene" uid="uid://damcuj6ijp7g3" path="res://scenes/levels/test/spiketest.tscn" id="10_8g3mw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0a7c"]
 texture_margin_left = 5.0
@@ -58,6 +60,8 @@ lvl4 = ExtResource("5_5tbfj")
 lvl5 = ExtResource("6_fgdml")
 lvl6 = ExtResource("7_4qf4y")
 lvl7 = ExtResource("8_cg5qe")
+lvl8 = ExtResource("9_8dxxw")
+lvl9 = ExtResource("10_8g3mw")
 buttonSFX = NodePath("AudioStreamPlayer")
 
 [node name="Title" type="Node2D" parent="."]
@@ -156,22 +160,22 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_51r44")
 text = "Level Select"
 wrap_mode = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="LevelSelect"]
-offset_left = 250.0
-offset_top = 173.0
-offset_right = 378.015
-offset_bottom = 301.0
+[node name="CenterContainer1" type="CenterContainer" parent="LevelSelect"]
+offset_left = 300.0
+offset_top = 150.0
+offset_right = 428.015
+offset_bottom = 278.0
 
-[node name="Level1TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer"]
+[node name="Level1TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer1"]
 custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer2" type="CenterContainer" parent="LevelSelect"]
-offset_left = 450.0
-offset_top = 173.0
-offset_right = 578.0
-offset_bottom = 301.0
+offset_left = 500.0
+offset_top = 150.0
+offset_right = 628.0
+offset_bottom = 278.0
 
 [node name="Level2TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer2"]
 custom_minimum_size = Vector2(44, 0)
@@ -179,10 +183,10 @@ layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer3" type="CenterContainer" parent="LevelSelect"]
-offset_left = 650.0
-offset_top = 173.0
-offset_right = 778.0
-offset_bottom = 301.0
+offset_left = 700.0
+offset_top = 150.0
+offset_right = 828.0
+offset_bottom = 278.0
 
 [node name="Level3TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer3"]
 custom_minimum_size = Vector2(44, 0)
@@ -190,10 +194,10 @@ layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer4" type="CenterContainer" parent="LevelSelect"]
-offset_left = 850.0
-offset_top = 173.0
-offset_right = 978.0
-offset_bottom = 301.0
+offset_left = 300.0
+offset_top = 300.0
+offset_right = 428.0
+offset_bottom = 428.0
 
 [node name="Level4TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer4"]
 custom_minimum_size = Vector2(44, 0)
@@ -201,10 +205,10 @@ layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer5" type="CenterContainer" parent="LevelSelect"]
-offset_left = 350.0
-offset_top = 345.0
-offset_right = 478.0
-offset_bottom = 473.0
+offset_left = 500.0
+offset_top = 300.0
+offset_right = 628.0
+offset_bottom = 428.0
 
 [node name="Level5TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer5"]
 custom_minimum_size = Vector2(44, 0)
@@ -212,10 +216,10 @@ layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer6" type="CenterContainer" parent="LevelSelect"]
-offset_left = 550.0
-offset_top = 345.0
-offset_right = 678.0
-offset_bottom = 473.0
+offset_left = 700.0
+offset_top = 300.0
+offset_right = 828.0
+offset_bottom = 428.0
 
 [node name="Level6TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer6"]
 custom_minimum_size = Vector2(44, 0)
@@ -223,12 +227,34 @@ layout_mode = 2
 texture_normal = ExtResource("3_locn2")
 
 [node name="CenterContainer7" type="CenterContainer" parent="LevelSelect"]
-offset_left = 750.0
-offset_top = 345.0
-offset_right = 878.0
-offset_bottom = 473.0
+offset_left = 300.0
+offset_top = 450.0
+offset_right = 428.0
+offset_bottom = 578.0
 
 [node name="Level7TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer7"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+texture_normal = ExtResource("3_locn2")
+
+[node name="CenterContainer8" type="CenterContainer" parent="LevelSelect"]
+offset_left = 500.0
+offset_top = 450.0
+offset_right = 628.0
+offset_bottom = 578.0
+
+[node name="Level8TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer8"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+texture_normal = ExtResource("3_locn2")
+
+[node name="CenterContainer9" type="CenterContainer" parent="LevelSelect"]
+offset_left = 700.0
+offset_top = 450.0
+offset_right = 828.0
+offset_bottom = 578.0
+
+[node name="Level9TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer9"]
 custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
 texture_normal = ExtResource("3_locn2")
@@ -331,13 +357,15 @@ texture_hover = ExtResource("9_38eew")
 
 [connection signal="pressed" from="Title/CreditsButtonCenterContainer/CreditsTextureButton" to="." method="_on_credits_texture_button_pressed"]
 [connection signal="pressed" from="Title/StartButtonCenterContainer/StartTextureButton" to="." method="_on_start_texture_button_pressed"]
-[connection signal="pressed" from="LevelSelect/CenterContainer/Level1TextureButton" to="." method="_on_level_1_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer1/Level1TextureButton" to="." method="_on_level_1_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer2/Level2TextureButton" to="." method="_on_level_2_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer3/Level3TextureButton" to="." method="_on_level_3_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer4/Level4TextureButton" to="." method="_on_level_4_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer5/Level5TextureButton" to="." method="_on_level_5_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer6/Level6TextureButton" to="." method="_on_level_6_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/CenterContainer7/Level7TextureButton" to="." method="_on_level_7_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer8/Level8TextureButton" to="." method="_on_level_8_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer9/Level9TextureButton" to="." method="_on_level_9_texture_button_pressed"]
 [connection signal="pressed" from="LevelSelect/BackButtonCenterContainer/BackTextureButton" to="." method="_on_back_texture_button_pressed"]
 [connection signal="pressed" from="Credits/BackButtonCenterContainer/BackTextureButton" to="." method="_on_back_texture_button_pressed"]
 [connection signal="pressed" from="QuitButtonCenterContainer/QuitTextureButton" to="." method="_on_quit_texture_button_pressed"]
