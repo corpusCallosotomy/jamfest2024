@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" path="res://scenes/levels/levelscript.gd" id="1_b384a"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="1_g4u4i"]
-[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://Ethan Contributions/assets/interactables/fan.tscn" id="2_qfvxx"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="2_qfvxx"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="3_o5vy8"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="4_iy8n3"]
 [ext_resource type="TileSet" uid="uid://dlo74butvd7vw" path="res://Ethan Contributions/assets/tilesets/floortiles.tres" id="7_o7u58"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_b384a")
-nextLevelAddress = "test/combinetest"
+nextLevelAddress = "test/spiketest"
 NV_start_position = Vector2(500, 1000)
 
 [node name="ball" parent="." instance=ExtResource("1_g4u4i")]
