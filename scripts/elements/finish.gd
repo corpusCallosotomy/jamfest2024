@@ -56,7 +56,7 @@ func _process(_delta):
 
 func _on_body_entered(body):
 	if pressed: return
-	if body.is_in_group("ball"):
+	if body.is_in_group("player"):
 		pressed=true
 		print("A WINNER IS YOU")
 		
