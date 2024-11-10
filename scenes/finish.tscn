@@ -47,7 +47,6 @@ layout_mode = 2
 text = "NEXT LEVEL"
 
 [node name="options" type="Node2D" parent="."]
-visible = false
 top_level = true
 light_mask = 4
 visibility_layer = 4
@@ -62,36 +61,37 @@ offset_bottom = 543.0
 color = Color(0, 0, 0, 1)
 
 [node name="Paused" type="Sprite2D" parent="options"]
+position = Vector2(0, -50)
 texture = ExtResource("3_npj4e")
 
 [node name="Music" type="Sprite2D" parent="options"]
-position = Vector2(0, 120.5)
+position = Vector2(0, 70.5)
 texture = ExtResource("4_qmmra")
 
 [node name="HSlider" type="HSlider" parent="options"]
 offset_left = -250.0
-offset_top = 163.5
+offset_top = 113.5
 offset_right = 250.0
-offset_bottom = 179.5
+offset_bottom = 129.5
 min_value = -40.0
 max_value = 0.0
 
 [node name="Sfx" type="Sprite2D" parent="options"]
-position = Vector2(0, 231.5)
+position = Vector2(0, 181.5)
 texture = ExtResource("5_jffev")
 
 [node name="HSlider2" type="HSlider" parent="options"]
 offset_left = -250.0
-offset_top = 283.5
+offset_top = 233.5
 offset_right = 250.0
-offset_bottom = 299.5
+offset_bottom = 249.5
 min_value = -40.0
 max_value = 0.0
 
 [node name="CenterContainer" type="CenterContainer" parent="options"]
-offset_top = 355.0
+offset_top = 319.0
 offset_right = 286.0
-offset_bottom = 436.0
+offset_bottom = 400.0
 use_top_left = true
 
 [node name="Resume" type="TextureButton" parent="options/CenterContainer"]
@@ -102,9 +102,9 @@ texture_hover = ExtResource("4_1q3yk")
 texture_focused = ExtResource("4_1q3yk")
 
 [node name="CenterContainer2" type="CenterContainer" parent="options"]
-offset_top = 451.0
+offset_top = 433.0
 offset_right = 286.0
-offset_bottom = 532.0
+offset_bottom = 514.0
 use_top_left = true
 
 [node name="Title" type="TextureButton" parent="options/CenterContainer2"]
