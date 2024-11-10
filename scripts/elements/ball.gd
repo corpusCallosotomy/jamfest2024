@@ -43,4 +43,5 @@ func _integrate_forces(state):
 		reset_state = false
 
 func resetme():
+	get_tree().call_group("coin", "resetme")
 	reset_state = true
