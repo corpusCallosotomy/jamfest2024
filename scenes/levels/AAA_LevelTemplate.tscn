@@ -20,3 +20,4 @@ position = Vector2(571, 342)
 dimmer = NodePath("../CanvasModulate")
 
 [connection signal="levelComplete" from="Finish" to="." method="_on_finish_level_complete"]
+[connection signal="titlePressed" from="Finish" to="." method="_on_finish_title_pressed"]

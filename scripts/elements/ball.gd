@@ -23,7 +23,7 @@ func _on_body_entered(body):
 	if body.is_in_group("spike") and self.is_in_group("player"):
 
 		
-		var DeathParticle = preload("res://scenes/DeathParticle.tscn")
+		#var DeathParticle = preload("res://scenes/DeathParticle.tscn")
 		var instance = DeathParticle.instantiate()
 		get_tree().root.add_child(instance)
 		instance.global_position = self.position
@@ -32,7 +32,7 @@ func _on_body_entered(body):
 		print("it was a spike")
 		resetme()
 	else:
-		var ImpactParticle = preload("res://scenes/ImpactParticle.tscn")
+		#var ImpactParticle = preload("res://scenes/ImpactParticle.tscn")
 		var instance = ImpactParticle.instantiate()
 		get_tree().root.add_child(instance)
 		instance.global_position = self.position

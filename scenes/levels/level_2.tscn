@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="5_cmyof"]
 [ext_resource type="PackedScene" uid="uid://bo3browincqpy" path="res://scenes/Collectible.tscn" id="8_j4uo1"]
 
-
 [node name="Level0" instance=ExtResource("1_xmkjo")]
 
 [node name="CanvasModulate" parent="." index="1"]

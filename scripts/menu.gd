@@ -22,10 +22,10 @@ func _process(_delta: float) -> void:
 
 func _on_level_1_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	#var lvl1instance = lvl1.instantiate()
-	#get_tree().root.add_child(lvl1instance)
-	#queue_free()
-	get_tree().change_scene_to_packed(lvl1)
+	var lvl1instance = lvl1.instantiate()
+	get_tree().root.add_child(lvl1instance)
+	queue_free()
+	#get_tree().change_scene_to_packed(lvl1)
 
 
 func _on_level_2_texture_button_pressed() -> void:
