@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://weyi04tb1lql"]
+[gd_scene load_steps=10 format=3 uid="uid://weyi04tb1lql"]
 
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_kb4ko"]
 [ext_resource type="Script" path="res://scripts/elements/finish.gd" id="1_pa430"]
@@ -7,14 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://145q7sblilc8" path="res://sprites/ui/music.png" id="4_qmmra"]
 [ext_resource type="Texture2D" uid="uid://bndqdu3tx4od6" path="res://sprites/ui/sfx.png" id="5_jffev"]
 [ext_resource type="Texture2D" uid="uid://d032otk34he2e" path="res://sprites/ui/title.png" id="7_54qhk"]
+[ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="8_5k73y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lw1cv"]
 size = Vector2(128, 128)
 
-[node name="Finish" type="Area2D"]
+[node name="Finish" type="Area2D" node_paths=PackedStringArray("buttonSFX")]
 script = ExtResource("1_pa430")
 SFXName = "SFX"
 MusName = "Music"
+buttonSFX = NodePath("options/AudioStreamPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_lw1cv")
@@ -101,6 +103,10 @@ texture_normal = ExtResource("7_54qhk")
 texture_pressed = ExtResource("7_54qhk")
 texture_hover = ExtResource("7_54qhk")
 texture_focused = ExtResource("7_54qhk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="options"]
+stream = ExtResource("8_5k73y")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="pressed" from="winscreen/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

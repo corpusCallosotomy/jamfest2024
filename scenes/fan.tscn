@@ -64,7 +64,6 @@ texture_scale = 0.46
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Area2D"]
 stream = ExtResource("6_ctklj")
 autoplay = true
-stream_paused = true
 bus = &"SFX"
 
 [node name="VSlider" type="VSlider" parent="."]
