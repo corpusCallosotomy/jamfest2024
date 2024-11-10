@@ -8,7 +8,7 @@
 radius = 17.0
 
 [node name="ball" type="RigidBody2D" groups=["ball"]]
-z_index = 1
+z_index = 3
 gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 4

@@ -1,5 +1,6 @@
 extends Node2D
 
+var collected = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,5 +13,11 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_in_group("ball"): 
-		self.queue_free() # Replace with function body.
+	if body.is_in_group("ball"):
+		if collected==false: 
+			collected=true
+			$Area2D.visible=false
+		
+func resetme():
+	collected=false
+	$Area2D.visible=true

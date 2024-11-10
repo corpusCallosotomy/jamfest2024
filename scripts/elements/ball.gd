@@ -23,3 +23,6 @@ func _integrate_forces(state):
 		state.transform = Transform2D(0.0, startingposition)
 		self.linear_velocity=Vector2.ZERO
 		reset_state = false
+
+func resetme():
+	reset_state = true
