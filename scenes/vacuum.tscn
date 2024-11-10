@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://k210ejdc2pu1"]
+[gd_scene load_steps=10 format=3 uid="uid://k210ejdc2pu1"]
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_8d0nf"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="2_3bok2"]
 [ext_resource type="Texture2D" uid="uid://oc1nebab3iqu" path="res://Ethan Contributions/refurbished assets/Vacuum.png" id="2_sbvpf"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_d6d0q"]
 [ext_resource type="AudioStream" uid="uid://dy5j0c0fswak5" path="res://sounds/jam sfx _ vacuumFinal.ogg" id="5_stjmf"]
+[ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="6_abvqa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
@@ -34,6 +35,7 @@ fanForce = -100
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Vacuum" type="Sprite2D" parent="Area2D"]
+z_index = 1
 texture = ExtResource("2_sbvpf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -67,10 +69,11 @@ max_distance = 550.0
 bus = &"SFX"
 
 [node name="VSlider" type="VSlider" parent="."]
-offset_left = -8.0
+offset_left = -32.0
 offset_top = -175.0
-offset_right = 8.0
+offset_right = 32.0
 offset_bottom = 175.0
+theme_override_icons/grabber = ExtResource("6_abvqa")
 theme_override_styles/slider = SubResource("StyleBoxLine_j5oog")
 value = 50.0
 

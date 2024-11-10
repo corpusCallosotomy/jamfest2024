@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://3jqgvtuyggbp"]
+[gd_scene load_steps=11 format=3 uid="uid://3jqgvtuyggbp"]
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_cmsqu"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_wvpoa"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_1lvi8"]
 [ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/refurbished assets/fan_animated.tscn" id="5_psipw"]
 [ext_resource type="AudioStream" uid="uid://b014pitgb3tpt" path="res://sounds/jam sfx _ fanFinal.ogg" id="6_ctklj"]
+[ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="7_jxad2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
@@ -34,9 +35,9 @@ script = ExtResource("1_cmsqu")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="fan_animated" parent="Area2D" instance=ExtResource("5_psipw")]
+z_index = 1
 
 [node name="Fan" type="Sprite2D" parent="Area2D"]
-visible = false
 texture = ExtResource("2_c3t2x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -67,10 +68,11 @@ autoplay = true
 bus = &"SFX"
 
 [node name="VSlider" type="VSlider" parent="."]
-offset_left = -8.0
+offset_left = -32.0
 offset_top = -175.0
-offset_right = 8.0
+offset_right = 32.0
 offset_bottom = 175.0
+theme_override_icons/grabber = ExtResource("7_jxad2")
 theme_override_styles/slider = SubResource("StyleBoxLine_d5tvb")
 
 [connection signal="value_changed" from="VSlider" to="." method="_on_v_slider_value_changed"]
