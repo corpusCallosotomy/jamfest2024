@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://duxs6018xl4m1"]
+
+[ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="1_g4u4i"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="2_qfvxx"]
+[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="3_o5vy8"]
+[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="4_iy8n3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ball" parent="." instance=ExtResource("1_g4u4i")]
+position = Vector2(788, 70)
+
+[node name="fan" parent="." instance=ExtResource("2_qfvxx")]
+position = Vector2(147, 188)
+
+[node name="vacuum" parent="." instance=ExtResource("3_o5vy8")]
+position = Vector2(201, 459)
+rotation = -1.5708
+
+[node name="vacuum2" parent="." instance=ExtResource("3_o5vy8")]
+position = Vector2(383, 591)
+rotation = -1.5708
+
+[node name="vacuum3" parent="." instance=ExtResource("3_o5vy8")]
+position = Vector2(883, 527)
+rotation = -1.5708
+minimumPoint = -300.0
+maximumPoint = 300.0
+influenceLength = 480.0
+
+[node name="Finish" parent="." instance=ExtResource("4_iy8n3")]
+position = Vector2(768, 402)
+nextLevelAddress = "test/spiketest"
