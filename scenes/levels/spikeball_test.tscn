@@ -4,8 +4,9 @@
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="2_xvbr0"]
 [ext_resource type="PackedScene" uid="uid://b3pk3cx83wd7m" path="res://scenes/spikeball.tscn" id="3_f08y3"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="4_quy4x"]
-[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://Ethan Contributions/assets/interactables/fan.tscn" id="5_fuj0p"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="5_fuj0p"]
 [ext_resource type="PackedScene" uid="uid://bkh0gkqwggadn" path="res://Ethan Contributions/assets/interactables/spikeball_animation.tscn" id="6_nf0bm"]
+
 
 [node name="Level0" instance=ExtResource("1_m3i0r")]
 

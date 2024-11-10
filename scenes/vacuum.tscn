@@ -8,7 +8,6 @@
 [ext_resource type="AudioStream" uid="uid://dy5j0c0fswak5" path="res://sounds/jam sfx _ vacuumFinal.ogg" id="5_stjmf"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="6_abvqa"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
 

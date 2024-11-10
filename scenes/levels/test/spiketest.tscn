@@ -1,13 +1,12 @@
 [gd_scene load_steps=7 format=4 uid="uid://damcuj6ijp7g3"]
 
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="1_soyy2"]
-[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://Ethan Contributions/assets/interactables/fan.tscn" id="2_mitpw"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="2_mitpw"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_42cu5"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="4_4vt46"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="5_pbktd"]
-
-
 [ext_resource type="PackedScene" uid="uid://b3pk3cx83wd7m" path="res://scenes/spikeball.tscn" id="6_8km5p"]
+
 
 
 

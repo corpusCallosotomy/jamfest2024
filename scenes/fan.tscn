@@ -9,7 +9,6 @@
 [ext_resource type="AudioStream" uid="uid://b014pitgb3tpt" path="res://sounds/jam sfx _ fanFinal.ogg" id="6_ctklj"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="7_jxad2"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)
 
@@ -76,5 +75,6 @@ offset_right = 32.0
 offset_bottom = 175.0
 theme_override_icons/grabber = ExtResource("7_jxad2")
 theme_override_styles/slider = SubResource("StyleBoxLine_d5tvb")
+value = 50.0
 
 [connection signal="value_changed" from="VSlider" to="." method="_on_v_slider_value_changed"]
