@@ -5,12 +5,15 @@
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_42cu5"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="4_4vt46"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="5_pbktd"]
+
 [ext_resource type="PackedScene" uid="uid://b3pk3cx83wd7m" path="res://scenes/spikeball.tscn" id="6_8km5p"]
+
+
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." groups=["spike"]]
-tile_map_data = PackedByteArray("AAAIAAUAAgAAAAIAAAAIAAYAAgAAAAIAAAAIAAcAAgAAAAIAAAAIAAgAAgAAAAIAAAAIAAkAAgAAAAIAAAAIAAoAAgAAAAIAAAA=")
+tile_map_data = PackedByteArray("AAAIAAUAAgAAAAIAAAAIAAYAAgAAAAIAAAAIAAkAAgAAAAIAAAAIAAoAAgAAAAIAAAA=")
 tile_set = ExtResource("1_soyy2")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -30,5 +33,7 @@ rotation = -1.5708
 [node name="Finish" parent="." instance=ExtResource("5_pbktd")]
 position = Vector2(208, 415)
 
+
 [node name="spikeball" parent="." instance=ExtResource("6_8km5p")]
 position = Vector2(253, 257)
+
