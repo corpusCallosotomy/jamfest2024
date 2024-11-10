@@ -1,7 +1,10 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://d2c752v8cxt3e"]
+[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://d2c752v8cxt3e"]
 
 [ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/Straight Spritesheet.png" id="1_ryiin"]
 [ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/Finish.png" id="2_0b6b0"]
+[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/StraightSpikeSpirtesheet.png" id="3_5b20t"]
+[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
+[ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/SpikeBaseSpritesheet.png" id="5_t8x1h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_467lk"]
 texture = ExtResource("1_ryiin")
@@ -120,8 +123,101 @@ texture = ExtResource("2_0b6b0")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hotew"]
+texture = ExtResource("3_5b20t")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 6
+0:0/animation_frame_0/duration = 0.12
+0:0/animation_frame_1/duration = 0.12
+0:0/animation_frame_2/duration = 0.12
+0:0/animation_frame_3/duration = 0.12
+0:0/animation_frame_4/duration = 0.12
+0:0/animation_frame_5/duration = 0.12
+0:0/0 = 0
+0:1/animation_columns = 6
+0:1/animation_frame_0/duration = 0.12
+0:1/animation_frame_1/duration = 0.12
+0:1/animation_frame_2/duration = 0.12
+0:1/animation_frame_3/duration = 0.12
+0:1/animation_frame_4/duration = 0.12
+0:1/animation_frame_5/duration = 0.12
+0:1/0 = 0
+0:2/animation_columns = 6
+0:2/animation_frame_0/duration = 0.12
+0:2/animation_frame_1/duration = 0.12
+0:2/animation_frame_2/duration = 0.12
+0:2/animation_frame_3/duration = 0.12
+0:2/animation_frame_4/duration = 0.12
+0:2/animation_frame_5/duration = 0.12
+0:2/0 = 0
+0:3/animation_columns = 6
+0:3/animation_frame_0/duration = 0.12
+0:3/animation_frame_1/duration = 0.12
+0:3/animation_frame_2/duration = 0.12
+0:3/animation_frame_3/duration = 0.12
+0:3/animation_frame_4/duration = 0.12
+0:3/animation_frame_5/duration = 0.12
+0:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtdtt"]
+texture = ExtResource("4_swoxl")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 6
+0:0/animation_frame_0/duration = 0.12
+0:0/animation_frame_1/duration = 0.12
+0:0/animation_frame_2/duration = 0.12
+0:0/animation_frame_3/duration = 0.12
+0:0/animation_frame_4/duration = 0.12
+0:0/animation_frame_5/duration = 0.12
+0:0/0 = 0
+0:1/animation_columns = 6
+0:1/animation_frame_0/duration = 0.12
+0:1/animation_frame_1/duration = 0.12
+0:1/animation_frame_2/duration = 0.12
+0:1/animation_frame_3/duration = 0.12
+0:1/animation_frame_4/duration = 0.12
+0:1/animation_frame_5/duration = 0.12
+0:1/0 = 0
+0:2/animation_columns = 6
+0:2/animation_frame_0/duration = 0.12
+0:2/animation_frame_1/duration = 0.12
+0:2/animation_frame_2/duration = 0.12
+0:2/animation_frame_3/duration = 0.12
+0:2/animation_frame_4/duration = 0.12
+0:2/animation_frame_5/duration = 0.12
+0:2/0 = 0
+0:3/animation_columns = 6
+0:3/animation_frame_0/duration = 0.12
+0:3/animation_frame_1/duration = 0.12
+0:3/animation_frame_2/duration = 0.12
+0:3/animation_frame_3/duration = 0.12
+0:3/animation_frame_4/duration = 0.12
+0:3/animation_frame_5/duration = 0.12
+0:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kbos6"]
+texture = ExtResource("5_t8x1h")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
 [resource]
 tile_size = Vector2i(32, 32)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 3
 sources/0 = SubResource("TileSetAtlasSource_467lk")
 sources/1 = SubResource("TileSetAtlasSource_hx52u")
+sources/2 = SubResource("TileSetAtlasSource_hotew")
+sources/3 = SubResource("TileSetAtlasSource_wtdtt")
+sources/5 = SubResource("TileSetAtlasSource_kbos6")
