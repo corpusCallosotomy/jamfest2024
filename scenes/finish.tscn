@@ -46,7 +46,9 @@ text = "NEXT LEVEL"
 
 [node name="options" type="Node2D" parent="."]
 visible = false
+top_level = true
 light_mask = 4
+visibility_layer = 4
 position = Vector2(576, 150)
 
 [node name="Paused" type="Sprite2D" parent="options"]
