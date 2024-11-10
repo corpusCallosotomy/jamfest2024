@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_1sesr"]
 [ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_f5q0a"]
-[ext_resource type="PackedScene" uid="uid://dcavmgiger00b" path="res://combinetest.tscn" id="2_kkmpk"]
+[ext_resource type="PackedScene" uid="uid://c4fwmimhul160" path="res://scenes/levels/level_1.tscn" id="2_nl8vt"]
 [ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="4_vbvof"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0a7c"]
@@ -40,7 +40,7 @@ script = ExtResource("1_1sesr")
 Menu = NodePath("Title")
 LevelSelect = NodePath("LevelSelect")
 Credits = NodePath("Credits")
-lvl1 = ExtResource("2_kkmpk")
+lvl1 = ExtResource("2_nl8vt")
 buttonSFX = NodePath("AudioStreamPlayer")
 
 [node name="Title" type="Node2D" parent="."]
@@ -62,7 +62,27 @@ theme_override_constants/line_spacing = 16
 theme_override_fonts/font = ExtResource("2_f5q0a")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxTexture_n0a7c")
-text = "Title of The Game"
+text = "S.H.O.D.I.M.E."
+wrap_mode = 1
+
+[node name="TextEdit2" type="TextEdit" parent="Title"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 320.0
+offset_top = 250.0
+offset_right = 779.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 3
+theme_override_constants/line_spacing = 16
+theme_override_fonts/font = ExtResource("2_f5q0a")
+theme_override_font_sizes/font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxTexture_n0a7c")
+text = "Simulating Hundreds Of Dollars In Military Equipment"
 wrap_mode = 1
 
 [node name="StartButton" type="Button" parent="Title"]
