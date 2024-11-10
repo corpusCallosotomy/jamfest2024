@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnjyar28e0fpr"]
+[gd_scene load_steps=8 format=3 uid="uid://cnjyar28e0fpr"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_1sesr"]
 [ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_f5q0a"]
 [ext_resource type="PackedScene" uid="uid://dcavmgiger00b" path="res://combinetest.tscn" id="2_kkmpk"]
+[ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="4_vbvof"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0a7c"]
 texture_margin_left = 5.0
@@ -34,12 +35,13 @@ expand_margin_top = 5.0
 expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
-[node name="Menu" type="Node2D" node_paths=PackedStringArray("Menu", "LevelSelect", "Credits")]
+[node name="Menu" type="Node2D" node_paths=PackedStringArray("Menu", "LevelSelect", "Credits", "buttonSFX")]
 script = ExtResource("1_1sesr")
 Menu = NodePath("Title")
 LevelSelect = NodePath("LevelSelect")
 Credits = NodePath("Credits")
 lvl1 = ExtResource("2_kkmpk")
+buttonSFX = NodePath("AudioStreamPlayer")
 
 [node name="Title" type="Node2D" parent="."]
 
@@ -227,6 +229,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_f5q0a")
 text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vbvof")
+bus = &"SFX"
 
 [connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Title/CreditsButton" to="." method="_on_credits_button_pressed"]

@@ -10,6 +10,8 @@ extends Area2D
 
 @export var dimmer: CanvasModulate
 
+@export var buttonSFX : AudioStreamPlayer
+
 #@export var mainmenu: PackedScene
 
 var pressed = false
@@ -53,6 +55,7 @@ func _on_button_pressed():
 
 func _on_resume_pressed():
 	$options.visible=false
+	buttonSFX.playing = true
 
 
 func _on_title_pressed():
