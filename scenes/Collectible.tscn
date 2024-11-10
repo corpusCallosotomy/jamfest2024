@@ -1,22 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://cysvxlblv64ro"]
 
 [ext_resource type="Script" path="res://scripts/elements/collectible.gd" id="1_l2knk"]
-[ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="2_86fm2"]
+[ext_resource type="PackedScene" uid="uid://cirjp4ul5rqfd" path="res://Ethan Contributions/assets/coin_animated.tscn" id="3_b17xi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bagel"]
 radius = 15.1327
 
-[node name="Collectible" type="Node2D"]
+[node name="Area2D" type="Area2D" groups=["coin"]]
 script = ExtResource("1_l2knk")
 
-[node name="Area2D" type="Area2D" parent="." groups=["coin"]]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_bagel")
 
-[node name="Icon" type="Sprite2D" parent="Area2D"]
-position = Vector2(0.999975, 0.99999)
-scale = Vector2(0.15625, 0.15625)
-texture = ExtResource("2_86fm2")
+[node name="coin_animated" parent="." instance=ExtResource("3_b17xi")]
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

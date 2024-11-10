@@ -28,7 +28,7 @@ func _on_body_entered(body):
 		instance.emitting = true
 		
 		print("it was a spike")
-		reset_state = true
+		resetme()
 	else:
 		var ImpactParticle = preload("res://scenes/ImpactParticle.tscn")
 		var instance = ImpactParticle.instantiate()
