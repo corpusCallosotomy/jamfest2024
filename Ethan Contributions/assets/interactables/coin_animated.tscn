@@ -95,9 +95,7 @@ animations = [{
 }]
 
 [node name="coin_animated" type="AnimatedSprite2D"]
-position = Vector2(694, 498)
 sprite_frames = SubResource("SpriteFrames_6jmjb")
 autoplay = "default"
 frame_progress = 0.857981
 speed_scale = 1.4
-offset = Vector2(-160, -226)
