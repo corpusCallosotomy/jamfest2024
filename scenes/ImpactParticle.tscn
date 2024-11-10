@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1s3b0j8ys78a"]
 
-[ext_resource type="Texture2D" uid="uid://bl6wh6viviqs1" path="res://sprites/ImpactCloudParticle.png" id="1_al7jm"]
+[ext_resource type="Texture2D" uid="uid://c1hue811uiuqr" path="res://sprites/ImpactCloudParticle.png" id="1_al7jm"]
 [ext_resource type="AudioStream" uid="uid://b73bhlh7mcj6o" path="res://sounds/jam sfx - bonk.wav" id="2_odbpf"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7s8s4"]

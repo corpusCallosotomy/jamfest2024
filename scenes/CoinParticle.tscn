@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://gt2rhafcslbq"]
 
-[ext_resource type="Texture2D" uid="uid://brqaobaqh3luf" path="res://sprites/CoinShineParticleColored.png" id="1_vt816"]
+[ext_resource type="Texture2D" uid="uid://d1qdrdbdj2qvr" path="res://sprites/CoinShineParticleColored.png" id="1_vt816"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7s8s4"]
 particle_flag_disable_z = true
