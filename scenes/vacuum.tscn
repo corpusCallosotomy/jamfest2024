@@ -58,7 +58,7 @@ texture = ExtResource("4_yasmt")
 lifetime = 0.3
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D"]
-energy = 0.0
+energy = 0.5
 texture = ExtResource("3_d6d0q")
 texture_scale = 0.46
 
