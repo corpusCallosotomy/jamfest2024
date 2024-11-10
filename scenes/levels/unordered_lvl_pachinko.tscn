@@ -23,7 +23,7 @@ tile_set = ExtResource("2_n035j")
 position = Vector2(147, 320)
 
 [node name="vacuum" parent="." index="5" instance=ExtResource("4_1dnll")]
-position = Vector2(1087, 181)
+position = Vector2(1099, 380)
 rotation = -3.14159
 fanForce = -1000
 minimumPoint = -300.0
@@ -35,15 +35,15 @@ tile_map_data = PackedByteArray("AAAfAA0AAgAAAAIAAAAfAA4AAgAAAAIAAAAfAAoAAgAAAAI
 tile_set = ExtResource("2_n035j")
 
 [node name="fan" parent="." index="7" instance=ExtResource("5_8a5ng")]
-position = Vector2(85, 592)
+position = Vector2(205, 594)
 rotation = -1.5708
-minimumPoint = -20.0
-maximumPoint = 20.0
+minimumPoint = -40.0
+maximumPoint = 0.0
 influenceLength = 600.0
 
 [node name="fan2" parent="." index="8" instance=ExtResource("5_8a5ng")]
-position = Vector2(83, 46)
+position = Vector2(104, 38)
 rotation = -4.71239
-minimumPoint = -20.0
-maximumPoint = 20.0
+minimumPoint = 0.0
+maximumPoint = 40.0
 influenceLength = 600.0
