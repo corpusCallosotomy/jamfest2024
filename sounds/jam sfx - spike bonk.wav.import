@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://urm2r6tva437"
+path="res://.godot/imported/jam sfx - spike bonk.wav-04d7d37d1f7d48a76ffa0c570c2b6c4d.sample"
+
+[deps]
+
+source_file="res://sounds/jam sfx - spike bonk.wav"
+dest_files=["res://.godot/imported/jam sfx - spike bonk.wav-04d7d37d1f7d48a76ffa0c570c2b6c4d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
