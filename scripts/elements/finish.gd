@@ -6,11 +6,16 @@ var SFXIndex: int
 var MusIndex: int
 
 
-@export var thisLevelAddress: String = "level_1"
+#@export var thisLevelAddress: String = "level_1"
 var levelAddressHeader : String = "res://scenes/levels/"
-var fullLevelAddress : String
+#var fullLevelAddress : String
+#var fullLevelScene
 
-@export var nextLevelAddress: PackedScene
+
+#@export var nextLevelAddress: PackedScene
+
+@export var nextLevelAddress: String = "level_2"
+var fullNextScene : String
 
 @export var dimmer: CanvasModulate
 
@@ -32,7 +37,9 @@ func _ready():
 	
 	$reset/TextureButton.modulate=Color(1,1,1,0.1)
 	
-	fullLevelAddress = levelAddressHeader+thisLevelAddress+".tscn"
+	#fullLevelAddress = levelAddressHeader+thisLevelAddress+".tscn"
+	fullNextScene = levelAddressHeader+nextLevelAddress+".tscn"
+	
 	
 	#await get_tree().create_timer(10).timeout
 	#$reset/TextureButton.disabled=false
@@ -51,8 +58,9 @@ func _on_body_entered(body):
 		pressed=true
 		print("A WINNER IS YOU")
 		
-		var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_ELASTIC)
-		tween.tween_property(dimmer, "color", Color(1,1,1,1), 1)
+		if dimmer!=null:
+			var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_ELASTIC)
+			tween.tween_property(dimmer, "color", Color(1,1,1,1), 1)
 		
 		$winscreen.global_position=Vector2(576, 324)
 		$winscreen.visible=true
@@ -62,7 +70,8 @@ func _on_body_entered(body):
 func _on_button_pressed():
 	#get_tree().change_scene_to_packed(nextLevelAddress)
 	
-	get_tree().change_scene_to_packed(nextLevelAddress)
+	get_tree().change_scene_to_file(fullNextScene)
+	
 	#get_parent().queue_free()
 
 
@@ -74,7 +83,7 @@ func _on_resume_pressed():
 
 
 func _on_title_pressed():
-	get_tree().change_scene_to_packed(load("res://scenes/menus/Menu.tscn"))
+	get_tree().change_scene_to_file("res://scenes/menus/Menu.tscn")
 	#get_parent().queue_free()
 
 
