@@ -18,7 +18,7 @@ func _process(_delta):
 
 
 func _on_body_entered(body):
-	print("body entered")
+	#print("body entered")
 
 	if body.is_in_group("spike") and self.is_in_group("player"):
 

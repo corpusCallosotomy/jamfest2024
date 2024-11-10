@@ -11,7 +11,7 @@ radius = 17.0
 z_index = 3
 gravity_scale = 0.0
 contact_monitor = true
-max_contacts_reported = 4
+max_contacts_reported = 16
 linear_damp = 0.5
 script = ExtResource("1_l66w0")
 

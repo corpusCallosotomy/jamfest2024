@@ -5,7 +5,7 @@ var levelAddressHeader : String = "res://scenes/levels/"
 @export var nextLevelAddress: String = "level_2"
 var fullNextScene : PackedScene
 
-var nightVisionArray = preload("res://scenes/night_vision.tscn")
+var nightVisionArray = preload("res://scenes/nightvisionarray_healed.tscn")
 @export var NV_start_position : Vector2
 
 var NVGinstance : Node
