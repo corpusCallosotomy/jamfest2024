@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwwkjneoey7xh"]
+
+[ext_resource type="Texture2D" uid="uid://d4gm1a6ib0262" path="res://sprites/BallShardParticle.png" id="1_jsyda"]
+[ext_resource type="Script" path="res://scripts/elements/death_particle.gd" id="2_e6p60"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tb7e5"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 10.76
+angle_min = 1.07288e-05
+angle_max = 360.0
+radial_velocity_min = 170.37
+radial_velocity_max = 241.16
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 55.75
+radial_accel_max = 100.0
+scale_min = 0.4
+scale_max = 0.5
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_tb7e5")
+texture = ExtResource("1_jsyda")
+lifetime = 0.2
+one_shot = true
+script = ExtResource("2_e6p60")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+autoplay = true
+
+[connection signal="finished" from="." to="." method="_on_finished"]

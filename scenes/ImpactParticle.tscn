@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://c78v8ehxhnpbt"]
+
+[ext_resource type="Texture2D" uid="uid://ulv4r18eue5i" path="res://sprites/ImpactCloudParticle.png" id="1_k5d87"]
+[ext_resource type="Script" path="res://scripts/elements/death_particle.gd" id="2_xqdyh"]
+[ext_resource type="AudioStream" uid="uid://b73bhlh7mcj6o" path="res://sounds/jam sfx - bonk.wav" id="3_x7vby"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tb7e5"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 10.76
+angle_min = 1.07288e-05
+angle_max = 360.0
+radial_velocity_min = 93.31
+radial_velocity_max = 164.1
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 55.75
+radial_accel_max = 100.0
+scale_min = 0.4
+scale_max = 0.5
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+emitting = false
+amount = 6
+process_material = SubResource("ParticleProcessMaterial_tb7e5")
+texture = ExtResource("1_k5d87")
+lifetime = 0.2
+one_shot = true
+script = ExtResource("2_xqdyh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_x7vby")
+volume_db = 10.0
+autoplay = true
+
+[connection signal="finished" from="." to="." method="_on_finished"]

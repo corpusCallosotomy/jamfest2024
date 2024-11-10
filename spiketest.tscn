@@ -1,12 +1,30 @@
+<<<<<<< Updated upstream:spiketest.tscn
 [gd_scene load_steps=4 format=4 uid="uid://damcuj6ijp7g3"]
+=======
+[gd_scene load_steps=7 format=4 uid="uid://damcuj6ijp7g3"]
+>>>>>>> Stashed changes:scenes/levels/test/spiketest.tscn
 
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="1_soyy2"]
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="2_mitpw"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_42cu5"]
+<<<<<<< Updated upstream:spiketest.tscn
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." groups=["spike"]]
+=======
+[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="4_4vt46"]
+[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="5_pbktd"]
+[ext_resource type="PackedScene" uid="uid://cysvxlblv64ro" path="res://scenes/Collectible.tscn" id="6_rr600"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." groups=["spike"]]
+tile_map_data = PackedByteArray("AAAIAAUAAgAAAAIAAAAIAAoAAgAAAAIAAAA=")
+tile_set = ExtResource("1_soyy2")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+>>>>>>> Stashed changes:scenes/levels/test/spiketest.tscn
 tile_map_data = PackedByteArray("AAAJAAUAAAAFAAAAAAAJAAYAAAAFAAEAAAAKAAUAAAAGAAAAAAAKAAYAAAAGAAEAAAAJAAcAAAAFAAIAAAAJAAgAAAAFAAAAAAAKAAcAAAAGAAIAAAAKAAgAAAAGAAAAAAAJAAkAAAAFAAEAAAAJAAoAAAAFAAIAAAAKAAkAAAAGAAEAAAAKAAoAAAAGAAIAAAALAAUAAAAHAAAAAAALAAYAAAAHAAEAAAAMAAUAAAAFAAAAAAAMAAYAAAAFAAEAAAALAAcAAAAHAAIAAAALAAgAAAAHAAAAAAAMAAcAAAAFAAIAAAAMAAgAAAAFAAAAAAALAAkAAAAHAAEAAAALAAoAAAAHAAIAAAAMAAkAAAAFAAEAAAAMAAoAAAAFAAIAAAANAAUAAAAGAAAAAAANAAYAAAAGAAEAAAAOAAUAAAAHAAAAAAAOAAYAAAAHAAEAAAANAAcAAAAGAAIAAAANAAgAAAAGAAAAAAAOAAcAAAAHAAIAAAAOAAgAAAAHAAAAAAANAAkAAAAGAAEAAAANAAoAAAAGAAIAAAAOAAkAAAAHAAEAAAAOAAoAAAAHAAIAAAAPAAUAAAAFAAAAAAAPAAYAAAAFAAEAAAAPAAcAAAAFAAIAAAAPAAgAAAAFAAAAAAAPAAkAAAAFAAEAAAAPAAoAAAAFAAIAAAAQAAUAAAAGAAAAAAAQAAYAAAAGAAEAAAAQAAcAAAAGAAIAAAARAAUAAAAHAAAAAAARAAYAAAAHAAEAAAARAAcAAAAHAAIAAAAQAAgAAAAGAAAAAAAQAAkAAAAGAAEAAAAQAAoAAAAGAAIAAAARAAgAAAAHAAAAAAARAAkAAAAHAAEAAAARAAoAAAAHAAIAAAA=")
 tile_set = ExtResource("1_soyy2")
 
@@ -15,3 +33,16 @@ position = Vector2(12, 256)
 
 [node name="ball" parent="." instance=ExtResource("3_42cu5")]
 position = Vector2(62, 256)
+<<<<<<< Updated upstream:spiketest.tscn
+=======
+
+[node name="vacuum" parent="." instance=ExtResource("4_4vt46")]
+position = Vector2(335, 447)
+rotation = -1.5708
+
+[node name="Finish" parent="." instance=ExtResource("5_pbktd")]
+position = Vector2(208, 415)
+
+[node name="Collectible" parent="." instance=ExtResource("6_rr600")]
+position = Vector2(187, 257)
+>>>>>>> Stashed changes:scenes/levels/test/spiketest.tscn
