@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwqtxc4608rsh"]
+[gd_scene load_steps=5 format=3 uid="uid://b3pk3cx83wd7m"]
 
-[ext_resource type="Script" path="res://scripts/elements/ball.gd" id="1_l66w0"]
-[ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_rvcqx"]
-[ext_resource type="Texture2D" uid="uid://bmg5b333kuhjh" path="res://Ethan Contributions/assets/A_player ball/BallIdle.png" id="2_fyox8"]
+[ext_resource type="Script" path="res://scripts/elements/ball.gd" id="1_ibwch"]
+[ext_resource type="Texture2D" uid="uid://b8wgfgnopoqgi" path="res://Ethan Contributions/assets/A_player ball/SpikeBallIdle1.png" id="2_fqdxp"]
+[ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="3_lih6w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nh35h"]
-radius = 17.0
+radius = 21.6208
 
 [node name="ball" type="RigidBody2D" groups=["ball"]]
 z_index = 3
@@ -13,18 +13,18 @@ gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 4
 linear_damp = 0.5
-script = ExtResource("1_l66w0")
+script = ExtResource("1_ibwch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.88, 0.88)
 shape = SubResource("CircleShape2D_nh35h")
 
 [node name="Ball" type="Sprite2D" parent="."]
-texture = ExtResource("2_fyox8")
+texture = ExtResource("2_fqdxp")
 
 [node name="Icon" type="Sprite2D" parent="."]
 visible = false
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_rvcqx")
+texture = ExtResource("3_lih6w")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

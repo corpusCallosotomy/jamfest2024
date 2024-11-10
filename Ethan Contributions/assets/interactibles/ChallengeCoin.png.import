@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdxlstdpto3ux"
-path="res://.godot/imported/Finish.png-f75835ab4dab63c25f4508ac18a72412.ctex"
+uid="uid://dgh4jx1465jke"
+path="res://.godot/imported/ChallengeCoin.png-650305d4e415bafdc663502dd1342e0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Finish.png"
-dest_files=["res://.godot/imported/Finish.png-f75835ab4dab63c25f4508ac18a72412.ctex"]
+source_file="res://Ethan Contributions/assets/interactibles/ChallengeCoin.png"
+dest_files=["res://.godot/imported/ChallengeCoin.png-650305d4e415bafdc663502dd1342e0f.ctex"]
 
 [params]
 

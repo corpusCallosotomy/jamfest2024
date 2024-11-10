@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oc1nebab3iqu"
-path="res://.godot/imported/Vacuum.png-85ab5eb4a7aadf17b625f720c2d7f9fb.ctex"
+uid="uid://bdxlstdpto3ux"
+path="res://.godot/imported/Finish.png-cb7721e028b9a1e841e9c4c677b88d73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/refurbished assets/Vacuum.png"
-dest_files=["res://.godot/imported/Vacuum.png-85ab5eb4a7aadf17b625f720c2d7f9fb.ctex"]
+source_file="res://Ethan Contributions/assets/environment/Finish.png"
+dest_files=["res://.godot/imported/Finish.png-cb7721e028b9a1e841e9c4c677b88d73.ctex"]
 
 [params]
 

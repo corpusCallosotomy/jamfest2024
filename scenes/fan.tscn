@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_cmsqu"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_wvpoa"]
-[ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Fan.png" id="2_c3t2x"]
+[ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Z_overwritten/Fan.png" id="2_c3t2x"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_1lvi8"]
 [ext_resource type="Texture2D" uid="uid://dgxwq0j8vq0yh" path="res://sprites/AirDustParticle.png" id="5_o3slk"]
-[ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/refurbished assets/fan_animated.tscn" id="5_psipw"]
+[ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/assets/interactibles/fan_animated.tscn" id="5_psipw"]
 [ext_resource type="AudioStream" uid="uid://b014pitgb3tpt" path="res://sounds/jam sfx _ fanFinal.ogg" id="6_ctklj"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="7_jxad2"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jvy4l"]
 size = Vector2(240, 52)

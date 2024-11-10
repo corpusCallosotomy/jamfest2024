@@ -1,14 +1,14 @@
 [gd_resource type="TileSet" load_steps=13 format=3 uid="uid://d2c752v8cxt3e"]
 
-[ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/Straight Spritesheet.png" id="1_ryiin"]
-[ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/Finish.png" id="2_0b6b0"]
-[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/StraightSpikeSpirtesheet.png" id="3_5b20t"]
-[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
-[ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/SpikeBaseSpritesheet.png" id="5_t8x1h"]
-[ext_resource type="Texture2D" uid="uid://uhhfrlxrqs8x" path="res://Ethan Contributions/assets/FinishTrafficSpritesheet.png" id="6_yiys5"]
+[ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/environment/Straight Spritesheet.png" id="1_exy1o"]
+[ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/environment/Finish.png" id="2_myc4q"]
+[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/interactibles/StraightSpikeSpirtesheet.png" id="3_5b20t"]
+[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/interactibles/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
+[ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/environment/SpikeBaseSpritesheet.png" id="5_ssnie"]
+[ext_resource type="Texture2D" uid="uid://uhhfrlxrqs8x" path="res://Ethan Contributions/assets/environment/FinishTrafficSpritesheet.png" id="6_fkwa5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_467lk"]
-texture = ExtResource("1_ryiin")
+texture = ExtResource("1_exy1o")
 margins = Vector2i(5, 5)
 separation = Vector2i(5, 5)
 texture_region_size = Vector2i(32, 32)
@@ -120,7 +120,7 @@ texture_region_size = Vector2i(32, 32)
 11:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx52u"]
-texture = ExtResource("2_0b6b0")
+texture = ExtResource("2_myc4q")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
@@ -209,7 +209,7 @@ texture_region_size = Vector2i(32, 32)
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.5, -16, 16, 5.75, 13.25, 13, -13.5, -13.75)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kbos6"]
-texture = ExtResource("5_t8x1h")
+texture = ExtResource("5_ssnie")
 margins = Vector2i(5, 5)
 separation = Vector2i(5, 5)
 texture_region_size = Vector2i(32, 32)
@@ -223,7 +223,7 @@ texture_region_size = Vector2i(32, 32)
 3:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljn0k"]
-texture = ExtResource("6_yiys5")
+texture = ExtResource("6_fkwa5")
 margins = Vector2i(5, 5)
 separation = Vector2i(5, 5)
 texture_region_size = Vector2i(32, 32)

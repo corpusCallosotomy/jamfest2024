@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn84yvuawin37"
-path="res://.godot/imported/Fan.png-6505be0c1476e77e33646ee7849243ff.ctex"
+uid="uid://chjgxuwohnb0u"
+path="res://.godot/imported/SpikeBallSpritesheet.png-7f74468cd387682c3bc4e0d3da827662.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Fan.png"
-dest_files=["res://.godot/imported/Fan.png-6505be0c1476e77e33646ee7849243ff.ctex"]
+source_file="res://Ethan Contributions/assets/A_player ball/SpikeBallSpritesheet.png"
+dest_files=["res://.godot/imported/SpikeBallSpritesheet.png-7f74468cd387682c3bc4e0d3da827662.ctex"]
 
 [params]
 

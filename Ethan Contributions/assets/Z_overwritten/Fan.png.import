@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7uwb18mre01b"
-path="res://.godot/imported/FanSpritesheet.png-52f241e0214ef6160d0f9388f8d6ca5c.ctex"
+uid="uid://dn84yvuawin37"
+path="res://.godot/imported/Fan.png-eec09d8b39551ff8a4ff6be0de324cbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/refurbished assets/FanSpritesheet.png"
-dest_files=["res://.godot/imported/FanSpritesheet.png-52f241e0214ef6160d0f9388f8d6ca5c.ctex"]
+source_file="res://Ethan Contributions/assets/Z_overwritten/Fan.png"
+dest_files=["res://.godot/imported/Fan.png-eec09d8b39551ff8a4ff6be0de324cbb.ctex"]
 
 [params]
 

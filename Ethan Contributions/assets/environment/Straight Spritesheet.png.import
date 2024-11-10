@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uhhfrlxrqs8x"
-path="res://.godot/imported/FinishTrafficSpritesheet.png-9484fe29072ae9be82641a166ddb3c42.ctex"
+uid="uid://d1o1p00td41if"
+path="res://.godot/imported/Straight Spritesheet.png-c6396c7e474231b324bdea48c7cb9e6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/FinishTrafficSpritesheet.png"
-dest_files=["res://.godot/imported/FinishTrafficSpritesheet.png-9484fe29072ae9be82641a166ddb3c42.ctex"]
+source_file="res://Ethan Contributions/assets/environment/Straight Spritesheet.png"
+dest_files=["res://.godot/imported/Straight Spritesheet.png-c6396c7e474231b324bdea48c7cb9e6c.ctex"]
 
 [params]
 

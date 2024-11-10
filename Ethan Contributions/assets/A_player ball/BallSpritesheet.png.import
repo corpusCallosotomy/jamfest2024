@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgh4jx1465jke"
-path="res://.godot/imported/ChallengeCoin.png-7650d197e25265d963f12bc9840669b3.ctex"
+uid="uid://dlpeiflsvywg0"
+path="res://.godot/imported/BallSpritesheet.png-11372ccf6b36f6cb826a4677a18c0077.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/ChallengeCoin.png"
-dest_files=["res://.godot/imported/ChallengeCoin.png-7650d197e25265d963f12bc9840669b3.ctex"]
+source_file="res://Ethan Contributions/assets/A_player ball/BallSpritesheet.png"
+dest_files=["res://.godot/imported/BallSpritesheet.png-11372ccf6b36f6cb826a4677a18c0077.ctex"]
 
 [params]
 

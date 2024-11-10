@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt1ttppw4rwop"
-path="res://.godot/imported/Background Pattern.png-f3de48cf1dfdf1626ce3d4a5d674da5d.ctex"
+uid="uid://b74mb0djlihnu"
+path="res://.godot/imported/Ball.png-53526265679e611529a3aa00562c8d6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Background Pattern.png"
-dest_files=["res://.godot/imported/Background Pattern.png-f3de48cf1dfdf1626ce3d4a5d674da5d.ctex"]
+source_file="res://Ethan Contributions/assets/Z_overwritten/Ball.png"
+dest_files=["res://.godot/imported/Ball.png-53526265679e611529a3aa00562c8d6b.ctex"]
 
 [params]
 
