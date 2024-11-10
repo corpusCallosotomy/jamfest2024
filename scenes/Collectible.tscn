@@ -9,16 +9,10 @@ radius = 15.0
 [node name="Area2D" type="Area2D" groups=["coin"]]
 script = ExtResource("1_l2knk")
 
-<<<<<<< Updated upstream
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(621, 312)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-=======
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
->>>>>>> Stashed changes
-shape = SubResource("CircleShape2D_bagel")
-
 [node name="coin_animated" parent="." instance=ExtResource("2_b13lt")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(621, 312)
+shape = SubResource("CircleShape2D_bagel")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

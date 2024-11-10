@@ -1,53 +1,39 @@
-[gd_scene load_steps=15 format=3 uid="uid://cirjp4ul5rqfd"]
-
-[ext_resource type="Texture2D" uid="uid://dgh4jx1465jke" path="res://Ethan Contributions/assets/ChallengeCoin.png" id="1_towg5"]
+[gd_scene load_steps=14 format=3 uid="uid://cirjp4ul5rqfd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7wigp"]
-atlas = ExtResource("1_towg5")
 region = Rect2(1, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8ds03"]
-atlas = ExtResource("1_towg5")
 region = Rect2(35, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sfuwf"]
-atlas = ExtResource("1_towg5")
 region = Rect2(69, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4uvg6"]
-atlas = ExtResource("1_towg5")
 region = Rect2(103, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6n1s8"]
-atlas = ExtResource("1_towg5")
 region = Rect2(137, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3qkrf"]
-atlas = ExtResource("1_towg5")
 region = Rect2(171, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rgpul"]
-atlas = ExtResource("1_towg5")
 region = Rect2(205, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pwdfm"]
-atlas = ExtResource("1_towg5")
 region = Rect2(239, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6vnec"]
-atlas = ExtResource("1_towg5")
 region = Rect2(273, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_28fu4"]
-atlas = ExtResource("1_towg5")
 region = Rect2(307, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5tppb"]
-atlas = ExtResource("1_towg5")
 region = Rect2(341, 1, 33, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_unsxi"]
-atlas = ExtResource("1_towg5")
 region = Rect2(375, 1, 33, 33)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6jmjb"]
