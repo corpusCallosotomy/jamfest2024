@@ -21,6 +21,8 @@ position = Vector2(383, 591)
 rotation = -1.5708
 
 [node name="vacuum3" parent="." instance=ExtResource("3_0l3uv")]
-position = Vector2(789, 591)
+position = Vector2(789, 527)
 rotation = -1.5708
+minimumPoint = -300.0
+maximumPoint = 300.0
 influenceLength = 480.0

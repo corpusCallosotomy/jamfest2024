@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://k210ejdc2pu1"]
+[gd_scene load_steps=11 format=3 uid="uid://k210ejdc2pu1"]
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_8d0nf"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="2_3bok2"]
 [ext_resource type="Texture2D" uid="uid://oc1nebab3iqu" path="res://Ethan Contributions/refurbished assets/Vacuum.png" id="2_sbvpf"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_d6d0q"]
+[ext_resource type="Texture2D" uid="uid://dgxwq0j8vq0yh" path="res://sprites/AirDustParticle.png" id="4_yasmt"]
 [ext_resource type="AudioStream" uid="uid://dy5j0c0fswak5" path="res://sounds/jam sfx _ vacuumFinal.ogg" id="5_stjmf"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="6_abvqa"]
 
@@ -14,14 +15,14 @@ size = Vector2(240, 52)
 particle_flag_disable_z = true
 emission_shape = 3
 emission_box_extents = Vector3(1, 20, 1)
-angle_min = 1.07288e-05
-angle_max = 1.07288e-05
+angle_min = -180.0
+angle_max = 180.0
 spread = 0.0
 initial_velocity_min = 482.93
 initial_velocity_max = 729.31
 gravity = Vector3(0, 0, 0)
-scale_min = 0.06
-scale_max = 0.06
+scale_min = 0.01
+scale_max = 0.5
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_j5oog"]
 color = Color(1, 1, 1, 1)
@@ -49,12 +50,11 @@ scale = Vector2(0.359375, 0.359375)
 texture = ExtResource("2_3bok2")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Area2D"]
-modulate = Color(1, 1, 1, 0.305882)
 position = Vector2(234, 0)
 rotation = -3.14159
 amount = 16
 process_material = SubResource("ParticleProcessMaterial_xq6jf")
-texture = ExtResource("2_3bok2")
+texture = ExtResource("4_yasmt")
 lifetime = 0.3
 
 [node name="PointLight2D" type="PointLight2D" parent="Area2D"]
