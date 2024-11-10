@@ -7,9 +7,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="ball" parent="." instance=ExtResource("1_ss8go")]
-
 position = Vector2(788, 70)
-
 
 [node name="fan" parent="." instance=ExtResource("2_r57gu")]
 position = Vector2(147, 188)
@@ -23,6 +21,8 @@ position = Vector2(383, 591)
 rotation = -1.5708
 
 [node name="vacuum3" parent="." instance=ExtResource("3_0l3uv")]
-position = Vector2(789, 591)
+position = Vector2(789, 527)
 rotation = -1.5708
+minimumPoint = -300.0
+maximumPoint = 300.0
 influenceLength = 480.0

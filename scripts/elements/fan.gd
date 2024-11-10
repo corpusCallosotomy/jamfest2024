@@ -2,8 +2,13 @@ extends Node2D
 
 @export var fanForce : int = 100
 
-@export var minimumPoint : float = self.position.y-167.5
-@export var maximumPoint : float = self.position.y+167.5
+#@export var minimumPoint : float = self.position.y-167.5
+#@export var maximumPoint : float = self.position.y+167.5
+
+@export var minimumPoint : float = -167.5
+@export var maximumPoint : float = 167.5
+
+
 
 @export var influenceLength : float = 240
 
@@ -11,6 +16,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
+	$VSlider.size.y = maximumPoint-minimumPoint
+	$VSlider.position.y=-.5*$VSlider.size.y
 	
 	$Area2D/CollisionShape2D.position.x = influenceLength/2
 	$Area2D/CollisionShape2D.shape.size.x = influenceLength

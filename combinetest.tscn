@@ -40,6 +40,5 @@ has_slider = false
 
 [node name="Finish" parent="." node_paths=PackedStringArray("dimmer") instance=ExtResource("9_lxjui")]
 position = Vector2(573, 181)
-thisLevelName = "I Could Get Into It"
 nextLevelAddress = ExtResource("10_nsnwi")
 dimmer = NodePath("../Node2D/CanvasModulate")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy66rfws6qoug"]
+
+[ext_resource type="Script" path="res://scripts/globals/bgm.gd" id="1_0f5t8"]
+[ext_resource type="AudioStream" uid="uid://cvabklsd23uyn" path="res://sounds/PinballGameSongTITLE.wav" id="1_m3fvf"]
+[ext_resource type="AudioStream" uid="uid://ngjmpvgafkkq" path="res://sounds/PinballGameSong(DSMix).wav" id="2_l2ukf"]
+
+[node name="BGM" type="Node"]
+script = ExtResource("1_0f5t8")
+
+[node name="light" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_m3fvf")
+autoplay = true
+bus = &"Music"
+
+[node name="full" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_l2ukf")
+volume_db = -80.0
+autoplay = true
+bus = &"Music"
