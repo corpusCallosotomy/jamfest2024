@@ -1,260 +1,11 @@
-[gd_scene load_steps=42 format=4 uid="uid://bpueg80kftbn7"]
+[gd_scene load_steps=7 format=4 uid="uid://bpueg80kftbn7"]
 
 [ext_resource type="PackedScene" uid="uid://dklgvrrl6qvml" path="res://scenes/levels/AAA_LevelTemplate.tscn" id="1_xmkjo"]
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="2_xbrem"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_r7x2t"]
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="4_ce2mc"]
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="5_cmyof"]
-[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="6_ruqsw"]
-[ext_resource type="PackedScene" uid="uid://cirjp4ul5rqfd" path="res://Ethan Contributions/assets/coin_animated.tscn" id="7_itnxm"]
-[ext_resource type="Texture2D" uid="uid://dlpeiflsvywg0" path="res://Ethan Contributions/assets/BallSpritesheet.png" id="8_467d0"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dbcu8"]
-atlas = ExtResource("8_467d0")
-region = Rect2(5, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5quvu"]
-atlas = ExtResource("8_467d0")
-region = Rect2(42, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tdwcs"]
-atlas = ExtResource("8_467d0")
-region = Rect2(79, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xp4dv"]
-atlas = ExtResource("8_467d0")
-region = Rect2(116, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a5bep"]
-atlas = ExtResource("8_467d0")
-region = Rect2(153, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rhj01"]
-atlas = ExtResource("8_467d0")
-region = Rect2(190, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4bdfw"]
-atlas = ExtResource("8_467d0")
-region = Rect2(227, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xfe33"]
-atlas = ExtResource("8_467d0")
-region = Rect2(264, 42, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wpnrn"]
-atlas = ExtResource("8_467d0")
-region = Rect2(5, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3leue"]
-atlas = ExtResource("8_467d0")
-region = Rect2(42, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xrsel"]
-atlas = ExtResource("8_467d0")
-region = Rect2(79, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dhe85"]
-atlas = ExtResource("8_467d0")
-region = Rect2(116, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sinrf"]
-atlas = ExtResource("8_467d0")
-region = Rect2(153, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oago0"]
-atlas = ExtResource("8_467d0")
-region = Rect2(190, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ywikj"]
-atlas = ExtResource("8_467d0")
-region = Rect2(227, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xeky6"]
-atlas = ExtResource("8_467d0")
-region = Rect2(264, 79, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iotst"]
-atlas = ExtResource("8_467d0")
-region = Rect2(5, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rqaih"]
-atlas = ExtResource("8_467d0")
-region = Rect2(42, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kqohx"]
-atlas = ExtResource("8_467d0")
-region = Rect2(79, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s2fjf"]
-atlas = ExtResource("8_467d0")
-region = Rect2(116, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_elhtf"]
-atlas = ExtResource("8_467d0")
-region = Rect2(153, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r10a4"]
-atlas = ExtResource("8_467d0")
-region = Rect2(190, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_voi82"]
-atlas = ExtResource("8_467d0")
-region = Rect2(227, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hhv1m"]
-atlas = ExtResource("8_467d0")
-region = Rect2(264, 116, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bxxky"]
-atlas = ExtResource("8_467d0")
-region = Rect2(5, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sdxse"]
-atlas = ExtResource("8_467d0")
-region = Rect2(42, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xp0tt"]
-atlas = ExtResource("8_467d0")
-region = Rect2(79, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vnc7c"]
-atlas = ExtResource("8_467d0")
-region = Rect2(116, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ecdsm"]
-atlas = ExtResource("8_467d0")
-region = Rect2(153, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3hn05"]
-atlas = ExtResource("8_467d0")
-region = Rect2(190, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qqpkv"]
-atlas = ExtResource("8_467d0")
-region = Rect2(227, 5, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p8r8p"]
-atlas = ExtResource("8_467d0")
-region = Rect2(264, 5, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_72cxq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dbcu8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5quvu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tdwcs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xp4dv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a5bep")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rhj01")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4bdfw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xfe33")
-}],
-"loop": true,
-"name": &"down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wpnrn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3leue")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xrsel")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dhe85")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sinrf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oago0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ywikj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xeky6")
-}],
-"loop": true,
-"name": &"left",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iotst")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rqaih")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kqohx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s2fjf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_elhtf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r10a4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_voi82")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hhv1m")
-}],
-"loop": true,
-"name": &"right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bxxky")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sdxse")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xp0tt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vnc7c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ecdsm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3hn05")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qqpkv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p8r8p")
-}],
-"loop": true,
-"name": &"up",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://bo3browincqpy" path="res://scenes/Collectible.tscn" id="8_j4uo1"]
 
 [node name="Level0" instance=ExtResource("1_xmkjo")]
 
@@ -262,35 +13,30 @@ animations = [{
 visible = false
 
 [node name="ball" parent="." index="3" instance=ExtResource("3_r7x2t")]
-position = Vector2(965, 116)
+position = Vector2(926, 94)
 
 [node name="vacuum" parent="." index="4" instance=ExtResource("4_ce2mc")]
-position = Vector2(229, 572)
+position = Vector2(585, 561)
 rotation = -1.5708
+fanForce = -150
+minimumPoint = -550.0
+maximumPoint = 550.0
 influenceLength = 800.0
 
 [node name="fan2" parent="." index="5" instance=ExtResource("5_cmyof")]
-position = Vector2(1085, 267)
+position = Vector2(1058, 291)
 rotation = -3.14159
-influenceLength = 800.0
+minimumPoint = -200.0
+maximumPoint = 200.0
+influenceLength = 1000.0
 
-[node name="Finish2" parent="." index="6" instance=ExtResource("6_ruqsw")]
-position = Vector2(80, 466)
-
-[node name="coin_animated" parent="." index="7" instance=ExtResource("7_itnxm")]
-position = Vector2(701, 491)
-
-[node name="TileMapLayer3" type="TileMapLayer" parent="." index="8"]
-tile_map_data = PackedByteArray("AAAOAAcAAwAAAAAAAAAOAAgAAwAAAAEAAAAPAAgAAwAAAAIAAAAPAAcAAwAAAAMAAAAXAA0AAQAAAAAAAAAXAA4AAQAAAAAAAAAYAA4AAQAAAAAAAAAYAA0AAQAAAAAAAAA=")
+[node name="TileMapLayer3" type="TileMapLayer" parent="." index="6"]
+tile_map_data = PackedByteArray("AAAAABMAAAAKAAIAAAABABMAAAAKAAAAAAACABMAAAAKAAAAAAADABMAAAAKAAAAAAAEABMAAAAKAAAAAAAFABMAAAAKAAAAAAAGABMAAAAKAAAAAAAHABMAAAAKAAAAAAAIABMAAAAKAAAAAAAJABMAAAAKAAAAAAAKABMAAAAKAAAAAAALABMAAAAKAAAAAAAMABMAAAAKAAAAAAANABMAAAAKAAAAAAAOABMAAAAKAAAAAAAPABMAAAAKAAAAAAAQABMAAAAKAAAAAAARABMAAAAKAAAAAAASABMAAAAKAAAAAAATABMAAAAKAAAAAAAUABMAAAAKAAAAAAAVABMAAAAKAAAAAAAWABMAAAAKAAAAAAAXABMAAAAKAAAAAAAYABMAAAAKAAAAAAAZABMAAAAKAAAAAAAaABMAAAAKAAAAAAAbABMAAAAKAAAAAAAcABMAAAAKAAAAAAAdABMAAAAKAAAAAAAeABMAAAAKAAAAAAAfABMAAAAKAAAAAAAgABMAAAAKAAAAAAAhABMAAAAKAAAAAAAiABMAAAAKAAAAAAAjABMAAAAKAAEAAAAjABIAAAAJAAAAAAAjABEAAAAJAAAAAAAjABAAAAAJAAAAAAAjAA8AAAAJAAAAAAAjAA4AAAAJAAAAAAAjAA0AAAAJAAAAAAAjAAwAAAAJAAAAAAAjAAsAAAAJAAAAAAAjAAoAAAAJAAAAAAAjAAkAAAAJAAAAAAAjAAgAAAAJAAAAAAAjAAcAAAAJAAAAAAAjAAYAAAAJAAAAAAAjAAUAAAAJAAAAAAAjAAQAAAAJAAAAAAAjAAMAAAAJAAAAAAAjAAIAAAAJAAAAAAAjAAEAAAAJAAAAAAAjAAAAAAAKAAQAAAAiAAAAAAAKAAAAAAAhAAAAAAAKAAAAAAAgAAAAAAAKAAAAAAAfAAAAAAAKAAAAAAAeAAAAAAAKAAAAAAAdAAAAAAAKAAAAAAAcAAAAAAAKAAAAAAAbAAAAAAAKAAAAAAAaAAAAAAAKAAAAAAAZAAAAAAAKAAAAAAAYAAAAAAAKAAAAAAAXAAAAAAAKAAAAAAAWAAAAAAAKAAAAAAAVAAAAAAAKAAAAAAAUAAAAAAAKAAAAAAATAAAAAAAKAAAAAAASAAAAAAAKAAAAAAARAAAAAAAKAAAAAAAQAAAAAAAKAAAAAAAPAAAAAAAKAAAAAAAOAAAAAAAKAAAAAAANAAAAAAAKAAAAAAAMAAAAAAAKAAAAAAALAAAAAAAKAAAAAAAKAAAAAAAKAAAAAAAJAAAAAAAKAAAAAAAIAAAAAAAKAAAAAAAHAAAAAAAKAAAAAAAGAAAAAAAKAAAAAAAFAAAAAAAKAAAAAAAEAAAAAAAKAAAAAAADAAAAAAAKAAAAAAACAAAAAAAKAAAAAAABAAAAAAAKAAAAAAAAAAAAAAAKAAMAAAAAAAEAAAAJAAAAAAAAAAIAAAAJAAAAAAAAAAMAAAAJAAAAAAAAAAQAAAAJAAAAAAAAAAUAAAAJAAAAAAAAAAYAAAAJAAAAAAAAAAcAAAAJAAAAAAAAAAgAAAAJAAAAAAAAAAkAAAAJAAAAAAAAAAoAAAAJAAAAAAAAAAsAAAAJAAAAAAAAAAwAAAAJAAAAAAAAAA0AAAAJAAAAAAAAAA4AAAAJAAAAAAAAAA8AAAAJAAAAAAAAABAAAAAJAAAAAAAAABEAAAAJAAAAAAAAABIAAAAJAAAAAAABABAAAAAGAAEAAAABABEAAAAGAAEAAAABABIAAAAGAAEAAAACABAAAAAGAAEAAAACABEAAAAGAAEAAAACABIAAAAGAAEAAAADABAAAAAGAAEAAAADABEAAAAGAAEAAAADABIAAAAGAAEAAAAEABAAAAAGAAEAAAAEABEAAAAGAAEAAAAEABIAAAAGAAEAAAAFABAAAAAGAAEAAAAFABEAAAAGAAEAAAAFABIAAAAGAAEAAAAGABAAAAAGAAEAAAAGABEAAAAGAAEAAAAGABIAAAAGAAEAAAAHABAAAAAGAAEAAAAHABEAAAAGAAEAAAAHABIAAAAGAAEAAAAIABAAAAAGAAEAAAAIABEAAAAGAAEAAAAIABIAAAAGAAEAAAAJABAAAAAGAAEAAAAJABEAAAAGAAEAAAAJABIAAAAGAAEAAAAKABAAAAAGAAEAAAAKABEAAAAGAAEAAAAKABIAAAAGAAEAAAALABAAAAAGAAEAAAALABEAAAAGAAEAAAALABIAAAAGAAEAAAAMABAAAAAGAAEAAAAMABEAAAAGAAEAAAAMABIAAAAGAAEAAAANABAAAAAGAAEAAAANABEAAAAGAAEAAAANABIAAAAGAAEAAAAOABAAAAAGAAEAAAAOABEAAAAGAAEAAAAOABIAAAAGAAEAAAAPABAAAAAGAAEAAAAPABEAAAAGAAEAAAAPABIAAAAGAAEAAAAQABAAAAAGAAEAAAAQABEAAAAGAAEAAAAQABIAAAAGAAEAAAARABAAAAAGAAEAAAARABEAAAAGAAEAAAARABIAAAAGAAEAAAASABAAAAAGAAEAAAASABEAAAAGAAEAAAASABIAAAAGAAEAAAATABAAAAAGAAEAAAATABEAAAAGAAEAAAATABIAAAAGAAEAAAAUABAAAAAGAAEAAAAUABEAAAAGAAEAAAAUABIAAAAGAAEAAAAVABAAAAAGAAEAAAAVABEAAAAGAAEAAAAVABIAAAAGAAEAAAAWABAAAAAGAAEAAAAWABEAAAAGAAEAAAAWABIAAAAGAAEAAAAXABAAAAAGAAEAAAAXABEAAAAGAAEAAAAXABIAAAAGAAEAAAAYABAAAAAGAAEAAAAYABEAAAAGAAEAAAAYABIAAAAGAAEAAAAZABAAAAAGAAEAAAAZABEAAAAGAAEAAAAZABIAAAAGAAEAAAAaABAAAAAGAAEAAAAaABEAAAAGAAEAAAAaABIAAAAGAAEAAAAbABAAAAAGAAEAAAAbABEAAAAGAAEAAAAbABIAAAAGAAEAAAAcABAAAAAGAAEAAAAcABEAAAAGAAEAAAAcABIAAAAGAAEAAAAdABAAAAAGAAEAAAAdABEAAAAGAAEAAAAdABIAAAAGAAEAAAAeABAAAAAGAAEAAAAeABEAAAAGAAEAAAAeABIAAAAGAAEAAAAfABAAAAAGAAEAAAAfABEAAAAGAAEAAAAfABIAAAAGAAEAAAAgABAAAAAGAAEAAAAgABEAAAAGAAEAAAAgABIAAAAGAAEAAAAhABAAAAAGAAEAAAAhABEAAAAGAAEAAAAhABIAAAAGAAEAAAAiABAAAAAGAAEAAAAiABEAAAAGAAEAAAAiABIAAAAGAAEAAAAgAAEAAAAGAAEAAAAgAAIAAAAGAAEAAAAgAAMAAAAGAAEAAAAgAAQAAAAGAAEAAAAgAAUAAAAGAAEAAAAgAAYAAAAGAAEAAAAgAAcAAAAGAAEAAAAgAAgAAAAGAAEAAAAgAAkAAAAGAAEAAAAgAAoAAAAGAAEAAAAgAAsAAAAGAAEAAAAgAAwAAAAGAAEAAAAgAA0AAAAGAAEAAAAgAA4AAAAGAAEAAAAgAA8AAAAGAAEAAAAhAAEAAAAGAAEAAAAhAAIAAAAGAAEAAAAhAAMAAAAGAAEAAAAhAAQAAAAGAAEAAAAhAAUAAAAGAAEAAAAhAAYAAAAGAAEAAAAhAAcAAAAGAAEAAAAhAAgAAAAGAAEAAAAhAAkAAAAGAAEAAAAhAAoAAAAGAAEAAAAhAAsAAAAGAAEAAAAhAAwAAAAGAAEAAAAhAA0AAAAGAAEAAAAhAA4AAAAGAAEAAAAhAA8AAAAGAAEAAAAiAAEAAAAGAAEAAAAiAAIAAAAGAAEAAAAiAAMAAAAGAAEAAAAiAAQAAAAGAAEAAAAiAAUAAAAGAAEAAAAiAAYAAAAGAAEAAAAiAAcAAAAGAAEAAAAiAAgAAAAGAAEAAAAiAAkAAAAGAAEAAAAiAAoAAAAGAAEAAAAiAAsAAAAGAAEAAAAiAAwAAAAGAAEAAAAiAA0AAAAGAAEAAAAiAA4AAAAGAAEAAAAiAA8AAAAGAAEAAAAfAA8AAAAKAAEAAAAfAAEAAAAJAAAAAAAfAAIAAAAJAAAAAAAfAAMAAAAJAAAAAAAfAAQAAAAJAAAAAAAfAAUAAAAJAAAAAAAfAAYAAAAJAAAAAAAfAAcAAAAJAAAAAAAfAAgAAAAJAAAAAAAfAAkAAAAJAAAAAAAfAAoAAAAJAAAAAAAfAAsAAAAJAAAAAAAfAAwAAAAJAAAAAAAfAA0AAAAJAAAAAAAfAA4AAAAJAAAAAAABAA8AAAAKAAAAAAACAA8AAAAKAAAAAAADAA8AAAAKAAAAAAAEAA8AAAAKAAAAAAAFAA8AAAAKAAAAAAAGAA8AAAAKAAAAAAAHAA8AAAAKAAAAAAAIAA8AAAAKAAAAAAAJAA8AAAAKAAAAAAAKAA8AAAAKAAAAAAALAA8AAAAKAAAAAAAMAA8AAAAKAAAAAAANAA8AAAAKAAAAAAAOAA8AAAAKAAAAAAAPAA8AAAAKAAAAAAAQAA8AAAAKAAAAAAARAA8AAAAKAAAAAAASAA8AAAAKAAAAAAATAA8AAAAKAAAAAAAUAA8AAAAKAAAAAAAVAA8AAAAKAAAAAAAWAA8AAAAKAAAAAAAXAA8AAAAKAAAAAAAYAA8AAAAKAAAAAAAZAA8AAAAKAAAAAAAaAA8AAAAKAAAAAAAbAA8AAAAKAAAAAAAcAA8AAAAKAAAAAAAdAA8AAAAKAAAAAAAeAA8AAAAKAAAAAAAXAAYAAAAGAAIAAAAYAAYAAAAGAAIAAAAZAAYAAAADAAMAAAAXAAoAAAAGAAIAAAAYAAoAAAAGAAIAAAAZAAoAAAAHAAIAAAAXAAkAAAAGAAAAAAAYAAkAAAAGAAAAAAAZAAkAAAADAAEAAAAXAAUAAAAGAAAAAAAYAAUAAAAGAAAAAAAZAAUAAAAHAAAAAAASAAUAAAAGAAAAAAASAAYAAAAGAAIAAAATAAUAAAAGAAAAAAATAAYAAAAGAAIAAAAUAAUAAAAGAAAAAAAUAAYAAAAGAAIAAAAVAAUAAAAGAAAAAAAVAAYAAAAGAAIAAAAWAAUAAAAGAAAAAAAWAAYAAAAGAAIAAAARAAYAAAAGAAIAAAAQAAYAAAAGAAIAAAAPAAYAAAAGAAIAAAAOAAYAAAAGAAIAAAANAAYAAAAGAAIAAAAMAAYAAAAAAAQAAAALAAYAAAAGAAEAAAAKAAYAAAAAAAAAAAARAAUAAAAGAAAAAAAQAAUAAAAGAAAAAAAPAAUAAAAGAAAAAAAOAAUAAAAGAAAAAAANAAUAAAAGAAAAAAAMAAUAAAAGAAAAAAALAAUAAAAGAAAAAAAKAAUAAAABAAEAAAAKAAoAAAAHAAIAAAAKAAkAAAAHAAEAAAAKAAgAAAAAAAQAAAAKAAcAAAAGAAEAAAAWAAkAAAAGAAAAAAAVAAkAAAAGAAAAAAAUAAkAAAAGAAAAAAATAAkAAAAGAAAAAAASAAkAAAAGAAAAAAARAAkAAAAGAAAAAAAQAAkAAAAGAAAAAAAPAAkAAAAFAAAAAAAWAAoAAAAGAAIAAAAVAAoAAAAGAAIAAAAUAAoAAAAGAAIAAAATAAoAAAAGAAIAAAASAAoAAAAGAAIAAAARAAoAAAAGAAIAAAAQAAoAAAAGAAIAAAAPAAoAAAAFAAIAAAABAAwAAQAAAAAAAAACAAwAAQAAAAAAAAADAAwAAQAAAAAAAAADAA0AAQAAAAAAAAACAA0AAQAAAAAAAAABAA0AAQAAAAAAAAABAA4AAQAAAAAAAAACAA4AAQAAAAAAAAADAA4AAQAAAAAAAAAFAAQAAAAJAAAAAAAFAAUAAAAJAAAAAAAFAAYAAAAJAAAAAAAFAAkAAAAJAAAAAAAFAAgAAAAJAAAAAAAFAAcAAAAJAAAAAAALAAgAAAADAAMAAAAMAAcAAAADAAMAAAALAAcAAAAAAAQAAAABAAEAAAAGAAEAAAABAAIAAAAGAAEAAAABAAMAAAAGAAEAAAABAAQAAAAGAAEAAAABAAUAAAAGAAEAAAABAAYAAAAGAAEAAAABAAcAAAAGAAEAAAABAAgAAAAGAAEAAAABAAkAAAAGAAEAAAABAAoAAAAGAAEAAAABAAsAAAAKAAAAAAACAAEAAAAGAAEAAAACAAIAAAAGAAEAAAACAAMAAAAGAAEAAAACAAQAAAAGAAEAAAACAAUAAAAGAAEAAAACAAYAAAAGAAEAAAACAAcAAAAGAAEAAAACAAgAAAAGAAEAAAACAAkAAAAGAAEAAAACAAoAAAAGAAEAAAACAAsAAAAKAAAAAAADAAEAAAAGAAEAAAADAAIAAAAGAAEAAAADAAMAAAAGAAEAAAADAAQAAAAGAAEAAAADAAUAAAAGAAEAAAADAAYAAAAGAAEAAAADAAcAAAAGAAEAAAADAAgAAAAGAAEAAAADAAkAAAAGAAEAAAADAAoAAAAGAAEAAAADAAsAAAAKAAAAAAAEAAEAAAAGAAEAAAAEAAIAAAAGAAEAAAAEAAMAAAAGAAEAAAAEAAQAAAAGAAEAAAAEAAUAAAAGAAEAAAAEAAYAAAAGAAEAAAAEAAcAAAAGAAEAAAAEAAgAAAAGAAEAAAAEAAkAAAAGAAEAAAAEAAoAAAAGAAEAAAAEAAsAAAAKAAAAAAAFAAEAAAAJAAAAAAAFAAIAAAAJAAAAAAAFAAMAAAAJAAAAAAAFAAoAAAAJAAAAAAAFAAsAAAAKAAEAAAAJAAYAAAABAAEAAAAJAAcAAAAFAAEAAAAJAAgAAAAFAAEAAAAJAAkAAAAFAAEAAAAJAAoAAAAFAAIAAAA=")
 tile_set = ExtResource("2_xbrem")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="." index="9"]
-tile_map_data = PackedByteArray("AAAOAAkABQACAAAAAAAPAAkABQACAAAAAAAQAAkABQADAAAAAAAOAAgABQAAAAEAAAAPAAgABQABAAEAAAAQAAgAAgAAAAEAAAARAAkAAgAAAAAAAAASAAkAAgAAAAIAAAATAAgAAgAAAAMAAAATAAkABQACAAEAAAATAAcABQADAAEAAAAOAAcABQAAAAAAAAAPAAcABQABAAAAAAA=")
-tile_set = ExtResource("2_xbrem")
+[node name="Finish" parent="." index="7"]
+position = Vector2(80, 432)
+scale = Vector2(0.4, 0.4)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="11"]
-position = Vector2(378, 384)
-sprite_frames = SubResource("SpriteFrames_72cxq")
-animation = &"down"
-frame_progress = 0.0129154
-speed_scale = 3.5
+[node name="Collectible" parent="." index="8" instance=ExtResource("8_j4uo1")]
+position = Vector2(578, 257)
