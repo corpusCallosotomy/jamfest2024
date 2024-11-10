@@ -8,6 +8,9 @@ extends Node2D
 @export var lvl2 : PackedScene
 @export var lvl3 : PackedScene
 @export var lvl4 : PackedScene
+@export var lvl5 : PackedScene
+@export var lvl6 : PackedScene
+@export var lvl7 : PackedScene
 
 @export var buttonSFX : AudioStreamPlayer
 
@@ -30,17 +33,23 @@ func _on_level_1_texture_button_pressed() -> void:
 
 func _on_level_2_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	get_tree().change_scene_to_packed(lvl2)
+	var lvl2instance = lvl2.instantiate()
+	get_tree().root.add_child(lvl2instance)
+	queue_free()
 
 
 func _on_level_3_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	get_tree().change_scene_to_packed(lvl3)
+	var lvl3instance = lvl3.instantiate()
+	get_tree().root.add_child(lvl3instance)
+	queue_free()
 
 
 func _on_level_4_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	get_tree().change_scene_to_packed(lvl4)
+	var lvl4instance = lvl4.instantiate()
+	get_tree().root.add_child(lvl4instance)
+	queue_free()
 
 
 func _on_quit_texture_button_pressed() -> void:
@@ -67,3 +76,24 @@ func _on_start_texture_button_pressed() -> void:
 	LevelSelect.show()
 	Menu.hide()
 	Credits.hide()
+
+
+func _on_level_5_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	var lvl5instance = lvl5.instantiate()
+	get_tree().root.add_child(lvl5instance)
+	queue_free()
+
+
+func _on_level_6_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	var lvl6instance = lvl6.instantiate()
+	get_tree().root.add_child(lvl6instance)
+	queue_free()
+
+
+func _on_level_7_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	var lvl7instance = lvl7.instantiate()
+	get_tree().root.add_child(lvl7instance)
+	queue_free()
