@@ -1,16 +1,25 @@
-[gd_scene load_steps=10 format=3 uid="uid://weyi04tb1lql"]
+[gd_scene load_steps=13 format=3 uid="uid://weyi04tb1lql"]
 
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_kb4ko"]
 [ext_resource type="Script" path="res://scripts/elements/finish.gd" id="1_pa430"]
 [ext_resource type="Texture2D" uid="uid://ckty3mf8pugv7" path="res://sprites/ui/paused.png" id="3_npj4e"]
 [ext_resource type="Texture2D" uid="uid://oep01r1ii58u" path="res://sprites/ui/resume.png" id="4_1q3yk"]
 [ext_resource type="Texture2D" uid="uid://145q7sblilc8" path="res://sprites/ui/music.png" id="4_qmmra"]
+[ext_resource type="Texture2D" uid="uid://yowkbvdkwpic" path="res://sprites/OptionsSlider.png" id="5_j8f77"]
 [ext_resource type="Texture2D" uid="uid://bndqdu3tx4od6" path="res://sprites/ui/sfx.png" id="5_jffev"]
 [ext_resource type="Texture2D" uid="uid://d032otk34he2e" path="res://sprites/ui/title.png" id="7_54qhk"]
 [ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="8_5k73y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lw1cv"]
 size = Vector2(128, 128)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ga1pg"]
+color = Color(0.376471, 0.376471, 0.376471, 1)
+thickness = 2
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_xelq7"]
+color = Color(0.376471, 0.376471, 0.376471, 1)
+thickness = 2
 
 [node name="Finish" type="Area2D" node_paths=PackedStringArray("buttonSFX")]
 script = ExtResource("1_pa430")
@@ -47,6 +56,7 @@ layout_mode = 2
 text = "NEXT LEVEL"
 
 [node name="options" type="Node2D" parent="."]
+visible = false
 top_level = true
 light_mask = 4
 visibility_layer = 4
@@ -73,6 +83,8 @@ offset_left = -250.0
 offset_top = 113.5
 offset_right = 250.0
 offset_bottom = 129.5
+theme_override_icons/grabber = ExtResource("5_j8f77")
+theme_override_styles/slider = SubResource("StyleBoxLine_ga1pg")
 min_value = -40.0
 max_value = 0.0
 
@@ -85,6 +97,8 @@ offset_left = -250.0
 offset_top = 233.5
 offset_right = 250.0
 offset_bottom = 249.5
+theme_override_icons/grabber = ExtResource("5_j8f77")
+theme_override_styles/slider = SubResource("StyleBoxLine_xelq7")
 min_value = -40.0
 max_value = 0.0
 
