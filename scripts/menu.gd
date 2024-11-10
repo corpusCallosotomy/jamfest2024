@@ -67,3 +67,26 @@ func _on_level_4_button_pressed() -> void:
 	buttonSFX.playing = true
 	get_tree().root.add_child(lvl4.instantiate())
 	queue_free()
+
+
+func _on_level_1_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	#var lvl1instance = lvl1.instantiate()
+	#get_tree().root.add_child(lvl1instance)
+	#queue_free()
+	get_tree().change_scene_to_packed(lvl1)# Replace with function body.
+
+
+func _on_level_2_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	get_tree().change_scene_to_packed(lvl2)
+
+
+func _on_level_3_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	get_tree().change_scene_to_packed(lvl3)
+
+
+func _on_level_4_texture_button_pressed() -> void:
+	buttonSFX.playing = true
+	get_tree().change_scene_to_packed(lvl4)

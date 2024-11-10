@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cnjyar28e0fpr"]
+[gd_scene load_steps=9 format=3 uid="uid://cnjyar28e0fpr"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_1sesr"]
 [ext_resource type="FontFile" uid="uid://dwbtxhfdqlcs3" path="res://Fonts/Better VCR 6.1.ttf" id="2_f5q0a"]
 [ext_resource type="PackedScene" uid="uid://dcavmgiger00b" path="res://combinetest.tscn" id="2_kkmpk"]
+[ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="4_tal45"]
 [ext_resource type="AudioStream" uid="uid://cx0gtxrw4kgus" path="res://sounds/ButtonClick.wav" id="4_vbvof"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n0a7c"]
@@ -44,6 +45,7 @@ lvl1 = ExtResource("2_kkmpk")
 buttonSFX = NodePath("AudioStreamPlayer")
 
 [node name="Title" type="Node2D" parent="."]
+visible = false
 
 [node name="TextEdit" type="TextEdit" parent="Title"]
 anchors_preset = 8
@@ -82,7 +84,6 @@ theme_override_fonts/font = ExtResource("2_f5q0a")
 text = "Credits"
 
 [node name="LevelSelect" type="Node2D" parent="."]
-visible = false
 
 [node name="TextEdit" type="TextEdit" parent="LevelSelect"]
 anchors_preset = 8
@@ -113,52 +114,49 @@ theme_override_fonts/font = ExtResource("2_f5q0a")
 text = "Back
 "
 
-[node name="HBoxContainer" type="HBoxContainer" parent="LevelSelect"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 345.0
-offset_top = 355.0
-offset_right = 827.0
-offset_bottom = 399.78
-grow_horizontal = 2
-grow_vertical = 2
+[node name="CenterContainer" type="CenterContainer" parent="LevelSelect"]
+offset_left = 230.0
+offset_top = 260.0
+offset_right = 358.015
+offset_bottom = 388.0
 
-[node name="Level1Button" type="Button" parent="LevelSelect/HBoxContainer"]
+[node name="Level1TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer"]
+custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_f5q0a")
-text = "Level 1"
+texture_normal = ExtResource("4_tal45")
 
-[node name="MarginContainer" type="MarginContainer" parent="LevelSelect/HBoxContainer"]
-custom_minimum_size = Vector2(30, 15)
-layout_mode = 2
+[node name="CenterContainer2" type="CenterContainer" parent="LevelSelect"]
+offset_left = 430.0
+offset_top = 260.0
+offset_right = 558.0
+offset_bottom = 388.0
 
-[node name="Level2Button" type="Button" parent="LevelSelect/HBoxContainer"]
+[node name="Level2TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer2"]
+custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_f5q0a")
-text = "Level 2"
+texture_normal = ExtResource("4_tal45")
 
-[node name="MarginContainer2" type="MarginContainer" parent="LevelSelect/HBoxContainer"]
-custom_minimum_size = Vector2(30, 15)
-layout_mode = 2
+[node name="CenterContainer3" type="CenterContainer" parent="LevelSelect"]
+offset_left = 630.0
+offset_top = 260.0
+offset_right = 758.0
+offset_bottom = 388.0
 
-[node name="Level3Button" type="Button" parent="LevelSelect/HBoxContainer"]
+[node name="Level3TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer3"]
+custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_f5q0a")
-text = "Level 3
-"
+texture_normal = ExtResource("4_tal45")
 
-[node name="MarginContainer3" type="MarginContainer" parent="LevelSelect/HBoxContainer"]
-custom_minimum_size = Vector2(30, 15)
-layout_mode = 2
+[node name="CenterContainer4" type="CenterContainer" parent="LevelSelect"]
+offset_left = 830.0
+offset_top = 260.0
+offset_right = 958.0
+offset_bottom = 388.0
 
-[node name="Level4Button" type="Button" parent="LevelSelect/HBoxContainer"]
+[node name="Level4TextureButton" type="TextureButton" parent="LevelSelect/CenterContainer4"]
+custom_minimum_size = Vector2(44, 0)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_f5q0a")
-text = "Level 4
-"
+texture_normal = ExtResource("4_tal45")
 
 [node name="Credits" type="Node2D" parent="."]
 visible = false
@@ -237,6 +235,9 @@ bus = &"SFX"
 [connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Title/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="LevelSelect/BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="LevelSelect/HBoxContainer/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer/Level1TextureButton" to="." method="_on_level_1_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer2/Level2TextureButton" to="." method="_on_level_2_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer3/Level3TextureButton" to="." method="_on_level_3_texture_button_pressed"]
+[connection signal="pressed" from="LevelSelect/CenterContainer4/Level4TextureButton" to="." method="_on_level_4_texture_button_pressed"]
 [connection signal="pressed" from="Credits/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
