@@ -77,5 +77,4 @@ theme_override_icons/grabber = ExtResource("7_jxad2")
 theme_override_styles/slider = SubResource("StyleBoxLine_d5tvb")
 value = 50.0
 
-
 [connection signal="value_changed" from="VSlider" to="." method="_on_v_slider_value_changed"]
