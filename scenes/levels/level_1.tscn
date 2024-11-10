@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dklgvrrl6qvml" path="res://scenes/levels/AAA_LevelTemplate.tscn" id="1_wm8j4"]
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="2_0udjk"]
 [ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="3_bkyjv"]
-[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://Ethan Contributions/assets/interactables/fan.tscn" id="4_uoe5l"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="4_uoe5l"]
 [ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="5_bon2n"]
 [ext_resource type="PackedScene" uid="uid://bo3browincqpy" path="res://scenes/Collectible.tscn" id="6_dwbps"]
 
