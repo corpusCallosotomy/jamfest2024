@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx1c0ygjw10ce"
-path="res://.godot/imported/SpikeBaseSpritesheet.png-f210cf8fef71815f95eb200f6fbe1cf9.ctex"
+uid="uid://ds6uifk2tm1s2"
+path="res://.godot/imported/DiagonalSpikeSpirtesheet.png-77f6746ee98c6e2fac99ac93662ed3c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/SpikeBaseSpritesheet.png"
-dest_files=["res://.godot/imported/SpikeBaseSpritesheet.png-f210cf8fef71815f95eb200f6fbe1cf9.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/DiagonalSpikeSpirtesheet.png"
+dest_files=["res://.godot/imported/DiagonalSpikeSpirtesheet.png-77f6746ee98c6e2fac99ac93662ed3c4.ctex"]
 
 [params]
 
