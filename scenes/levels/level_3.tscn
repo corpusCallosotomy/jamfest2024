@@ -9,9 +9,6 @@
 
 [node name="Level" instance=ExtResource("1_pgn4j")]
 
-[node name="CanvasModulate" parent="." index="1"]
-visible = false
-
 [node name="Finish" parent="." index="2"]
 position = Vector2(961, 384)
 scale = Vector2(0.6, 0.6)
@@ -21,7 +18,7 @@ tile_map_data = PackedByteArray("AAAAAP//AAAKAAAAAAABAP//AAAKAAAAAAACAP//AAAKAAA
 tile_set = ExtResource("2_1r7bj")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." index="4" groups=["spike"]]
-tile_map_data = PackedByteArray("AAAOAAUAAgAAAAIAAAAOAAYAAgAAAAIAAAAOAAcAAgAAAAIAAAAKAAwAAwAAAAMAAAALAA0AAwAAAAMAAAAMAA4AAwAAAAMAAAANAA4AAgAAAAEAAAAKAAsAAgAAAAAAAAAOAAQAAwAAAAEAAAANAAQAAgAAAAMAAAAMAAQAAgAAAAMAAAALAAQAAgAAAAMAAAAVAAUAAgAAAAMAAAAaAAUAAgAAAAEAAAAZAAYAAwAAAAAAAAAUAAQAAwAAAAEAAAAWAAQAAwAAAAIAAAAbAAYAAwAAAAMAAAA=")
+tile_map_data = PackedByteArray("AAAOAAUAAgAAAAIAAAAOAAYAAgAAAAIAAAAOAAcAAgAAAAIAAAAKAAwAAwAAAAMAAAALAA0AAwAAAAMAAAAMAA4AAwAAAAMAAAANAA4AAgAAAAEAAAAKAAsAAgAAAAAAAAAOAAQAAwAAAAEAAAANAAQAAgAAAAMAAAAMAAQAAgAAAAMAAAALAAQAAgAAAAMAAAAVAAUAAgAAAAMAAAAaAAUAAgAAAAEAAAAZAAYAAwAAAAAAAAAUAAQAAwAAAAEAAAAWAAQAAwAAAAIAAAAbAAYAAwAAAAMAAAAOAAgAAgAAAAIAAAAXAAQAAgAAAAMAAAAYAAYAAgAAAAEAAAA=")
 tile_set = ExtResource("2_1r7bj")
 
 [node name="vacuum" parent="." index="5" instance=ExtResource("3_skiwm")]
@@ -44,7 +41,10 @@ maximumPoint = 400.0
 influenceLength = 400.0
 
 [node name="ball" parent="." index="8" instance=ExtResource("3_loocj")]
-position = Vector2(192, 193)
+position = Vector2(193, 219)
 
 [node name="Area2D" parent="." index="9" instance=ExtResource("6_2pfkc")]
 position = Vector2(960, 164)
+
+[node name="Area2D2" parent="." index="10" instance=ExtResource("6_2pfkc")]
+position = Vector2(445, 164)

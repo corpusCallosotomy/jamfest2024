@@ -6,12 +6,10 @@
 
 [node name="Level" instance=ExtResource("1_hbrod")]
 
-
 [node name="CanvasModulate" parent="." index="1"]
 visible = false
 
 [node name="Finish" parent="." index="2"]
-
 position = Vector2(574, 352)
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." index="3"]

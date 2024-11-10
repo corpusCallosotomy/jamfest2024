@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="5_5qu8a"]
 [ext_resource type="PackedScene" uid="uid://bo3browincqpy" path="res://scenes/Collectible.tscn" id="6_jwv15"]
 
-
 [node name="Level0" instance=ExtResource("1_7yehe")]
 
 [node name="Finish" parent="." index="2"]
