@@ -10,9 +10,6 @@
 
 [node name="Level0" instance=ExtResource("1_xmkjo")]
 
-[node name="CanvasModulate" parent="." index="2"]
-visible = false
-
 [node name="ball" parent="." index="3" instance=ExtResource("3_r7x2t")]
 position = Vector2(965, 116)
 
