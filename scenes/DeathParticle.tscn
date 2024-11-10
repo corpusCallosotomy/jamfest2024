@@ -21,3 +21,6 @@ process_material = SubResource("ParticleProcessMaterial_7s8s4")
 texture = ExtResource("1_7ic37")
 lifetime = 0.2
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
