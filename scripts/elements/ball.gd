@@ -36,10 +36,8 @@ func _integrate_forces(state):
 		state.transform = Transform2D(0.0, startingposition)
 		self.linear_velocity=Vector2.ZERO
 		reset_state = false
-<<<<<<< Updated upstream
-=======
+
 
 func resetme():
 	get_tree().call_group("coin", "resetme")
 	reset_state = true
->>>>>>> Stashed changes
