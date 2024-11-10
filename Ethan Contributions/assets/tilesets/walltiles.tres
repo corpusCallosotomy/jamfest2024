@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/environment/Straight Spritesheet.png" id="1_exy1o"]
 [ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/environment/Finish.png" id="2_myc4q"]
-[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/interactibles/StraightSpikeSpirtesheet.png" id="3_5b20t"]
-[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/interactibles/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
+[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/interactables/StraightSpikeSpirtesheet.png" id="3_5b20t"]
+[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/interactables/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
 [ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/environment/SpikeBaseSpritesheet.png" id="5_ssnie"]
 [ext_resource type="Texture2D" uid="uid://uhhfrlxrqs8x" path="res://Ethan Contributions/assets/environment/FinishTrafficSpritesheet.png" id="6_fkwa5"]
 

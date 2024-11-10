@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctmascxe51bsv"
-path="res://.godot/imported/StraightSpikeSpirtesheet.png-9041014d60d3350a596e118cd43fc408.ctex"
+uid="uid://chjgxuwohnb0u"
+path="res://.godot/imported/SpikeBallSpritesheet.png-78be3ef8c3014316f8dae9ff5a1aaa5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/interactibles/StraightSpikeSpirtesheet.png"
-dest_files=["res://.godot/imported/StraightSpikeSpirtesheet.png-9041014d60d3350a596e118cd43fc408.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/SpikeBallSpritesheet.png"
+dest_files=["res://.godot/imported/SpikeBallSpritesheet.png-78be3ef8c3014316f8dae9ff5a1aaa5a.ctex"]
 
 [params]
 

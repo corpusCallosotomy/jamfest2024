@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgh4jx1465jke"
-path="res://.godot/imported/ChallengeCoin.png-650305d4e415bafdc663502dd1342e0f.ctex"
+uid="uid://ds6uifk2tm1s2"
+path="res://.godot/imported/DiagonalSpikeSpirtesheet.png-77f6746ee98c6e2fac99ac93662ed3c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/interactibles/ChallengeCoin.png"
-dest_files=["res://.godot/imported/ChallengeCoin.png-650305d4e415bafdc663502dd1342e0f.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/DiagonalSpikeSpirtesheet.png"
+dest_files=["res://.godot/imported/DiagonalSpikeSpirtesheet.png-77f6746ee98c6e2fac99ac93662ed3c4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oc1nebab3iqu"
-path="res://.godot/imported/Vacuum.png-1daf9fce5c4af72f777526409a33e9cf.ctex"
+uid="uid://dgh4jx1465jke"
+path="res://.godot/imported/ChallengeCoin.png-52a3a553d4e7a512b3255bf25d2789b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/interactibles/Vacuum.png"
-dest_files=["res://.godot/imported/Vacuum.png-1daf9fce5c4af72f777526409a33e9cf.ctex"]
+source_file="res://Ethan Contributions/assets/interactables/ChallengeCoin.png"
+dest_files=["res://.godot/imported/ChallengeCoin.png-52a3a553d4e7a512b3255bf25d2789b2.ctex"]
 
 [params]
 
