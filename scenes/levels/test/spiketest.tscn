@@ -9,7 +9,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." groups=["spike"]]
-tile_map_data = PackedByteArray("AAAIAAUAAgAAAAIAAAAIAAYAAgAAAAIAAAAIAAcAAgAAAAIAAAAIAAgAAgAAAAIAAAAIAAkAAgAAAAIAAAAIAAoAAgAAAAIAAAA=")
+tile_map_data = PackedByteArray("AAAIAAUAAgAAAAIAAAAIAAYAAgAAAAIAAAAIAAkAAgAAAAIAAAAIAAoAAgAAAAIAAAA=")
 tile_set = ExtResource("1_soyy2")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

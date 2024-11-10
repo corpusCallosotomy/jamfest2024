@@ -4,6 +4,7 @@ var startingposition : Vector2
 var reset_state = false
 
 var DeathParticle = load("res://scenes/DeathParticle.tscn")
+var ImpactParticle = load("res://scenes/ImpactParticle.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -28,6 +29,12 @@ func _on_body_entered(body):
 		
 		print("it was a spike")
 		reset_state = true
+	else:
+		var ImpactParticle = preload("res://scenes/ImpactParticle.tscn")
+		var instance = ImpactParticle.instantiate()
+		get_tree().root.add_child(instance)
+		instance.global_position = self.position
+		instance.emitting = true
 
 func _integrate_forces(state):
 	if reset_state:
