@@ -13,6 +13,8 @@ size = Vector2(128, 128)
 
 [node name="Finish" type="Area2D"]
 script = ExtResource("1_pa430")
+SFXName = "SFX"
+MusName = "Music"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_lw1cv")
@@ -59,6 +61,8 @@ offset_left = -250.0
 offset_top = 163.5
 offset_right = 250.0
 offset_bottom = 179.5
+min_value = -40.0
+max_value = 0.0
 
 [node name="Sfx" type="Sprite2D" parent="options"]
 position = Vector2(0, 231.5)
@@ -69,6 +73,8 @@ offset_left = -250.0
 offset_top = 283.5
 offset_right = 250.0
 offset_bottom = 299.5
+min_value = -40.0
+max_value = 0.0
 
 [node name="CenterContainer" type="CenterContainer" parent="options"]
 offset_top = 355.0
@@ -98,5 +104,7 @@ texture_focused = ExtResource("7_54qhk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="pressed" from="winscreen/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="options/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="options/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="pressed" from="options/CenterContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="options/CenterContainer2/Title" to="." method="_on_title_pressed"]
