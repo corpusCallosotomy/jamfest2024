@@ -1,21 +1,21 @@
 [gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dcsxf8ytof1bq"]
 
-[ext_resource type="Texture2D" uid="uid://7uwb18mre01b" path="res://Ethan Contributions/refurbished assets/FanSpritesheet.png" id="1_e1rf6"]
+[ext_resource type="Texture2D" uid="uid://7uwb18mre01b" path="res://Ethan Contributions/assets/interactables/FanSpritesheet.png" id="1_fj43u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rxas8"]
-atlas = ExtResource("1_e1rf6")
+atlas = ExtResource("1_fj43u")
 region = Rect2(5, 5, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vpwiv"]
-atlas = ExtResource("1_e1rf6")
+atlas = ExtResource("1_fj43u")
 region = Rect2(74, 5, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fapcf"]
-atlas = ExtResource("1_e1rf6")
+atlas = ExtResource("1_fj43u")
 region = Rect2(143, 5, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e88sh"]
-atlas = ExtResource("1_e1rf6")
+atlas = ExtResource("1_fj43u")
 region = Rect2(212, 5, 64, 64)
 
 [resource]

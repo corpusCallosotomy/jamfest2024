@@ -7,27 +7,34 @@ var MusIndex: int
 
 
 #@export var thisLevelAddress: String = "level_1"
-var levelAddressHeader : String = "res://scenes/levels/"
+#var levelAddressHeader : String = "res://scenes/levels/"
 #var fullLevelAddress : String
 #var fullLevelScene
 
 
 #@export var nextLevelAddress: PackedScene
 
-@export var nextLevelAddress: String = "level_2"
-var fullNextScene : String
+#@export var nextLevelAddress: String = "level_2"
+#var fullNextScene : String
 
 @export var dimmer: CanvasModulate
 
 @export var buttonSFX : AudioStreamPlayer
 
+signal levelComplete
+signal titlePressed
+
+var hasQuit = false
+
 #@export var mainmenu: PackedScene
 
+# it's called pressed but it's for if the ball has already entered once
 var pressed = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	BGM.lockIn()
 	
+	hasQuit=false
 	
 	SFXIndex = AudioServer.get_bus_index(SFXName)
 	MusIndex = AudioServer.get_bus_index(MusName)
@@ -38,7 +45,7 @@ func _ready():
 	$reset/TextureButton.modulate=Color(1,1,1,0.1)
 	
 	#fullLevelAddress = levelAddressHeader+thisLevelAddress+".tscn"
-	fullNextScene = levelAddressHeader+nextLevelAddress+".tscn"
+	#fullNextScene = levelAddressHeader+nextLevelAddress+".tscn"
 	
 	
 	#await get_tree().create_timer(10).timeout
@@ -54,7 +61,7 @@ func _process(_delta):
 
 func _on_body_entered(body):
 	if pressed: return
-	if body.is_in_group("ball"):
+	if body.is_in_group("player"):
 		pressed=true
 		print("A WINNER IS YOU")
 		
@@ -70,7 +77,8 @@ func _on_body_entered(body):
 func _on_button_pressed():
 	#get_tree().change_scene_to_packed(nextLevelAddress)
 	
-	get_tree().change_scene_to_file(fullNextScene)
+	levelComplete.emit()
+	#get_tree().change_scene_to_file(fullNextScene)
 	
 	#get_parent().queue_free()
 
@@ -83,7 +91,10 @@ func _on_resume_pressed():
 
 
 func _on_title_pressed():
-	get_tree().change_scene_to_file("res://scenes/menus/Menu.tscn")
+	#get_tree().change_scene_to_file("res://scenes/menus/Menu.tscn")
+	if hasQuit: return
+	hasQuit=true
+	titlePressed.emit()
 	#get_parent().queue_free()
 
 

@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dc4ovytc2po4n"]
 
-[ext_resource type="SpriteFrames" uid="uid://dcsxf8ytof1bq" path="res://Ethan Contributions/refurbished assets/fanframes.tres" id="1_5s6ql"]
+[ext_resource type="SpriteFrames" uid="uid://dcsxf8ytof1bq" path="res://Ethan Contributions/assets/interactables/fanframes.tres" id="1_5s6ql"]
+
 
 [node name="fan_animated" type="AnimatedSprite2D"]
 sprite_frames = ExtResource("1_5s6ql")

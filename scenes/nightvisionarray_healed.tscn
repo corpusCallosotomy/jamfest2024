@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://xmqt62xgt4gl"]
+
+[ext_resource type="Script" path="res://scripts/cameras/NightVisionArray.gd" id="1_5pdwt"]
+[ext_resource type="Texture2D" uid="uid://bmlbbgjwqy5of" path="res://sprites/CameraOverlayPixelArt.png" id="2_g1ple"]
+[ext_resource type="Script" path="res://scripts/cameras/smartCamera.gd" id="3_n1o1g"]
+[ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="5_bcsdu"]
+
+[node name="nightvisionarray_Healed" type="Node2D"]
+script = ExtResource("1_5pdwt")
+
+[node name="NightVision" type="Window" parent="."]
+title = "S.H.O.D.I.M.E"
+size = Vector2i(200, 200)
+unresizable = true
+always_on_top = true
+
+[node name="Sprite2D" type="Sprite2D" parent="NightVision"]
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="NightVision"]
+offset_right = 200.0
+offset_bottom = 200.0
+color = Color(0.376471, 0.870588, 0, 0.137255)
+
+[node name="CamOverlay" type="Sprite2D" parent="NightVision"]
+texture = ExtResource("2_g1ple")
+centered = false
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(200, 200)
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport" node_paths=PackedStringArray("myWindow")]
+script = ExtResource("3_n1o1g")
+myWindow = NodePath("../../NightVision")
+
+[node name="PointLight2D" type="PointLight2D" parent="SubViewport/Camera2D"]
+energy = 1.5
+texture = ExtResource("5_bcsdu")
+texture_scale = 0.6
+
+[node name="AudioListener2D" type="AudioListener2D" parent="SubViewport/Camera2D"]
+current = true

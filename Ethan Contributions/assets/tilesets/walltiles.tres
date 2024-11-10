@@ -1,13 +1,14 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://d2c752v8cxt3e"]
+[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://d2c752v8cxt3e"]
 
-[ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/Straight Spritesheet.png" id="1_ryiin"]
-[ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/Finish.png" id="2_0b6b0"]
-[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/StraightSpikeSpirtesheet.png" id="3_5b20t"]
-[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
-[ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/SpikeBaseSpritesheet.png" id="5_t8x1h"]
+[ext_resource type="Texture2D" uid="uid://d1o1p00td41if" path="res://Ethan Contributions/assets/environment/Straight Spritesheet.png" id="1_exy1o"]
+[ext_resource type="Texture2D" uid="uid://bdxlstdpto3ux" path="res://Ethan Contributions/assets/environment/Finish.png" id="2_myc4q"]
+[ext_resource type="Texture2D" uid="uid://ctmascxe51bsv" path="res://Ethan Contributions/assets/interactables/StraightSpikeSpirtesheet.png" id="3_5b20t"]
+[ext_resource type="Texture2D" uid="uid://ds6uifk2tm1s2" path="res://Ethan Contributions/assets/interactables/DiagonalSpikeSpirtesheet.png" id="4_swoxl"]
+[ext_resource type="Texture2D" uid="uid://cx1c0ygjw10ce" path="res://Ethan Contributions/assets/environment/SpikeBaseSpritesheet.png" id="5_ssnie"]
+[ext_resource type="Texture2D" uid="uid://uhhfrlxrqs8x" path="res://Ethan Contributions/assets/environment/FinishTrafficSpritesheet.png" id="6_fkwa5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_467lk"]
-texture = ExtResource("1_ryiin")
+texture = ExtResource("1_exy1o")
 margins = Vector2i(5, 5)
 separation = Vector2i(5, 5)
 texture_region_size = Vector2i(32, 32)
@@ -114,7 +115,7 @@ texture_region_size = Vector2i(32, 32)
 10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(16, 16, 16, -12.25, 12.5, -16, -16, -16, -16, 16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx52u"]
-texture = ExtResource("2_0b6b0")
+texture = ExtResource("2_myc4q")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
@@ -203,7 +204,7 @@ texture_region_size = Vector2i(32, 32)
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.5, -16, 16, 5.75, 13.25, 13, -13.5, -13.75)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kbos6"]
-texture = ExtResource("5_t8x1h")
+texture = ExtResource("5_ssnie")
 margins = Vector2i(5, 5)
 separation = Vector2i(5, 5)
 texture_region_size = Vector2i(32, 32)
@@ -216,11 +217,34 @@ texture_region_size = Vector2i(32, 32)
 2:1/0 = 0
 3:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljn0k"]
+texture = ExtResource("6_fkwa5")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 5)
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 2
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/0 = 0
+0:1/animation_columns = 2
+0:1/animation_frame_0/duration = 1.0
+0:1/animation_frame_1/duration = 1.0
+0:1/0 = 0
+0:2/animation_columns = 2
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/0 = 0
+0:3/animation_columns = 2
+0:3/animation_frame_0/duration = 1.0
+0:3/animation_frame_1/duration = 1.0
+0:3/0 = 0
+
 [resource]
 tile_size = Vector2i(32, 32)
-physics_layer_0/collision_layer = 3
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_467lk")
 sources/1 = SubResource("TileSetAtlasSource_hx52u")
 sources/2 = SubResource("TileSetAtlasSource_hotew")
 sources/3 = SubResource("TileSetAtlasSource_wtdtt")
 sources/5 = SubResource("TileSetAtlasSource_kbos6")
+sources/6 = SubResource("TileSetAtlasSource_ljn0k")

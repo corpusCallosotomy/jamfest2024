@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1qdrdbdj2qvr"
-path="res://.godot/imported/CoinShineParticleColored.png-ffe8c027b856f5804650226c3e3bb7f8.ctex"
+uid="uid://cwvc5la5ldkbo"
+path="res://.godot/imported/Vacuum.png-1a74ccd634b4869699f2f2782821f8a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/CoinShineParticleColored.png"
-dest_files=["res://.godot/imported/CoinShineParticleColored.png-ffe8c027b856f5804650226c3e3bb7f8.ctex"]
+source_file="res://Ethan Contributions/assets/Z_overwritten/Vacuum.png"
+dest_files=["res://.godot/imported/Vacuum.png-1a74ccd634b4869699f2f2782821f8a1.ctex"]
 
 [params]
 

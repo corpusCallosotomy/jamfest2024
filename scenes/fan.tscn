@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://scripts/elements/fan.gd" id="1_cmsqu"]
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_wvpoa"]
-[ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Fan.png" id="2_c3t2x"]
+[ext_resource type="Texture2D" uid="uid://dn84yvuawin37" path="res://Ethan Contributions/assets/Z_overwritten/Fan.png" id="2_c3t2x"]
 [ext_resource type="Texture2D" uid="uid://7ebxnxjhx2r1" path="res://sprites/2d_lights_and_shadows_neutral_point_light.webp" id="3_1lvi8"]
 [ext_resource type="Texture2D" uid="uid://dgxwq0j8vq0yh" path="res://sprites/AirDustParticle.png" id="5_o3slk"]
-[ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/refurbished assets/fan_animated.tscn" id="5_psipw"]
+[ext_resource type="PackedScene" uid="uid://dc4ovytc2po4n" path="res://Ethan Contributions/assets/interactables/fan_animated.tscn" id="5_psipw"]
 [ext_resource type="AudioStream" uid="uid://b014pitgb3tpt" path="res://sounds/jam sfx _ fanFinal.ogg" id="6_ctklj"]
 [ext_resource type="Texture2D" uid="uid://b8ghyqjqhay1v" path="res://sprites/nothing.png" id="7_jxad2"]
 
@@ -42,7 +42,6 @@ z_index = 1
 texture = ExtResource("2_c3t2x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
 position = Vector2(99.25, 0)
 shape = SubResource("RectangleShape2D_jvy4l")
 
@@ -75,5 +74,6 @@ offset_right = 32.0
 offset_bottom = 175.0
 theme_override_icons/grabber = ExtResource("7_jxad2")
 theme_override_styles/slider = SubResource("StyleBoxLine_d5tvb")
+value = 50.0
 
 [connection signal="value_changed" from="VSlider" to="." method="_on_v_slider_value_changed"]

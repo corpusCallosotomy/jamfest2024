@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1qdrdbdj2qvr"
-path="res://.godot/imported/CoinShineParticleColored.png-ffe8c027b856f5804650226c3e3bb7f8.ctex"
+uid="uid://bmg5b333kuhjh"
+path="res://.godot/imported/BallIdle.png-42dc027b78f3401220f7e5641e23e4fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/CoinShineParticleColored.png"
-dest_files=["res://.godot/imported/CoinShineParticleColored.png-ffe8c027b856f5804650226c3e3bb7f8.ctex"]
+source_file="res://Ethan Contributions/assets/A_player ball/BallIdle.png"
+dest_files=["res://.godot/imported/BallIdle.png-42dc027b78f3401220f7e5641e23e4fd.ctex"]
 
 [params]
 

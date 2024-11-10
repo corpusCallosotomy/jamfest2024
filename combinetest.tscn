@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://4jj1ui0xx1uj"]
+
+[ext_resource type="PackedScene" uid="uid://dp4u7ba8iovs2" path="res://scenes/night_vision.tscn" id="1_564k5"]
+[ext_resource type="Texture2D" uid="uid://lthc4xqijaun" path="res://sprites/blacktest.png" id="1_lyw2e"]
+[ext_resource type="PackedScene" uid="uid://dwqtxc4608rsh" path="res://scenes/ball.tscn" id="5_rjtu3"]
+[ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="6_2f1lt"]
+[ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="8_iowqq"]
+[ext_resource type="PackedScene" uid="uid://weyi04tb1lql" path="res://scenes/finish.tscn" id="9_lxjui"]
+
+
+[node name="Node2D" type="Node2D"]
+
+[node name="NightVisionArray" parent="." instance=ExtResource("1_564k5")]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 1174.0
+offset_bottom = 669.0
+color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Node2D"]
+color = Color(0, 0, 0, 1)
+
+[node name="HLwallpaper0516x9" type="Sprite2D" parent="Node2D"]
+visible = false
+position = Vector2(245, 235)
+texture = ExtResource("1_lyw2e")
+
+[node name="ball" parent="." instance=ExtResource("5_rjtu3")]
+position = Vector2(265, 192)
+
+[node name="fan" parent="." instance=ExtResource("6_2f1lt")]
+position = Vector2(217, 189)
+
+[node name="vacuum" parent="." instance=ExtResource("8_iowqq")]
+position = Vector2(655, 306)
+rotation = -1.57079
+has_slider = false
+
+[node name="Finish" parent="." node_paths=PackedStringArray("dimmer") instance=ExtResource("9_lxjui")]
+position = Vector2(573, 181)
+dimmer = NodePath("../Node2D/CanvasModulate")

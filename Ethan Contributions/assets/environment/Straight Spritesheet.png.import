@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt1ttppw4rwop"
-path="res://.godot/imported/Background Pattern.png-f3de48cf1dfdf1626ce3d4a5d674da5d.ctex"
+uid="uid://d1o1p00td41if"
+path="res://.godot/imported/Straight Spritesheet.png-c6396c7e474231b324bdea48c7cb9e6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ethan Contributions/assets/Background Pattern.png"
-dest_files=["res://.godot/imported/Background Pattern.png-f3de48cf1dfdf1626ce3d4a5d674da5d.ctex"]
+source_file="res://Ethan Contributions/assets/environment/Straight Spritesheet.png"
+dest_files=["res://.godot/imported/Straight Spritesheet.png-c6396c7e474231b324bdea48c7cb9e6c.ctex"]
 
 [params]
 

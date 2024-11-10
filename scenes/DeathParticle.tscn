@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://crwgmp5v8uyr3"]
+
+[ext_resource type="Texture2D" uid="uid://b1a1o5len8chq" path="res://sprites/BallShardParticle.png" id="1_7ic37"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7s8s4"]
+particle_flag_disable_z = true
+angle_min = 1.07288e-05
+angle_max = 360.0
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 218.67
+radial_velocity_min = 155.56
+radial_velocity_max = 266.67
+gravity = Vector3(0, 98, 0)
+scale_min = 0.5
+scale_max = 0.5
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_7s8s4")
+texture = ExtResource("1_7ic37")
+lifetime = 0.2
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true

@@ -14,11 +14,15 @@ extends Node2D
 
 @export var has_slider: bool = true
 
+@export var sliderStartValue : float = 50
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
 	$VSlider.size.y = maximumPoint-minimumPoint
 	$VSlider.position.y=-.5*$VSlider.size.y
+	
+	$VSlider.value=sliderStartValue
 	
 	$Area2D/CollisionShape2D.position.x = influenceLength/2
 	$Area2D/CollisionShape2D.shape.size.x = influenceLength
