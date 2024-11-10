@@ -1,5 +1,10 @@
 extends Area2D
 
+@export var SFXName: String
+@export var SFXIndex: int
+@export var MusName: String
+@export var MusIndex: int
+
 @export var thisLevelName: String
 @export var nextLevelAddress: PackedScene
 
@@ -10,7 +15,11 @@ extends Area2D
 var pressed = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	SFXIndex = AudioServer.get_bus_index(SFXName)
+	MusIndex = AudioServer.get_bus_index(MusName)
+	
+	$options/HSlider.value = db_to_linear(AudioServer.get_bus_volume_db(MusIndex))
+	$options/HSlider2.value = db_to_linear(AudioServer.get_bus_volume_db(SFXIndex))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -49,3 +58,13 @@ func _on_resume_pressed():
 func _on_title_pressed():
 	get_tree().change_scene_to_packed(load("res://scenes/menus/Menu.tscn"))
 	#get_parent().queue_free()
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	# This is the music slider
+	AudioServer.set_bus_volume_db(MusIndex,value)
+
+
+func _on_h_slider_2_value_changed(value: float) -> void:
+	# This is the SFX Slider
+	AudioServer.set_bus_volume_db(SFXIndex,value)
