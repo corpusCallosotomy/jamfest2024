@@ -1,10 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://weyi04tb1lql"]
+[gd_scene load_steps=16 format=3 uid="uid://weyi04tb1lql"]
 
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="1_kb4ko"]
 [ext_resource type="Script" path="res://scripts/elements/finish.gd" id="1_pa430"]
+[ext_resource type="Texture2D" uid="uid://dw5dq6llch2k5" path="res://sprites/ui/clear.png" id="3_5g2ub"]
 [ext_resource type="Texture2D" uid="uid://ckty3mf8pugv7" path="res://sprites/ui/paused.png" id="3_npj4e"]
 [ext_resource type="Texture2D" uid="uid://oep01r1ii58u" path="res://sprites/ui/resume.png" id="4_1q3yk"]
 [ext_resource type="Texture2D" uid="uid://145q7sblilc8" path="res://sprites/ui/music.png" id="4_qmmra"]
+[ext_resource type="Texture2D" uid="uid://hfemovf8xpcx" path="res://sprites/ui/next level.png" id="4_xep1b"]
 [ext_resource type="Texture2D" uid="uid://yowkbvdkwpic" path="res://sprites/OptionsSlider.png" id="5_j8f77"]
 [ext_resource type="Texture2D" uid="uid://bndqdu3tx4od6" path="res://sprites/ui/sfx.png" id="5_jffev"]
 [ext_resource type="Texture2D" uid="uid://d032otk34he2e" path="res://sprites/ui/title.png" id="7_54qhk"]
@@ -40,22 +42,24 @@ texture = ExtResource("1_kb4ko")
 [node name="winscreen" type="Node2D" parent="."]
 visible = false
 
+[node name="Clear" type="Sprite2D" parent="winscreen"]
+position = Vector2(0, -115)
+scale = Vector2(1.07342, 1.07342)
+texture = ExtResource("3_5g2ub")
+
 [node name="CenterContainer" type="CenterContainer" parent="winscreen"]
+offset_top = 104.0
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 144.0
 scale = Vector2(2.46925, 2.46925)
 use_top_left = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="winscreen/CenterContainer"]
+[node name="Button" type="TextureButton" parent="winscreen/CenterContainer"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="winscreen/CenterContainer/VBoxContainer"]
-layout_mode = 2
-text = "A WINNER IS YOU"
-
-[node name="Button" type="Button" parent="winscreen/CenterContainer/VBoxContainer"]
-layout_mode = 2
-text = "NEXT LEVEL"
+texture_normal = ExtResource("4_xep1b")
+texture_pressed = ExtResource("4_xep1b")
+texture_hover = ExtResource("4_xep1b")
+texture_focused = ExtResource("4_xep1b")
 
 [node name="options" type="CanvasLayer" parent="."]
 visible = false
@@ -148,7 +152,7 @@ texture_normal = ExtResource("10_yvlnm")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="pressed" from="winscreen/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="winscreen/CenterContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="value_changed" from="options/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="options/HSlider2" to="." method="_on_h_slider_2_value_changed"]
 [connection signal="pressed" from="options/CenterContainer/Resume" to="." method="_on_resume_pressed"]

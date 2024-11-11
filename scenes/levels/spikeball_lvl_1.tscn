@@ -10,13 +10,13 @@
 
 [node name="Level" instance=ExtResource("1_djqi4")]
 position = Vector2(0, -25)
+nextLevelAddress = "unordered_lvl_pachinko"
 
 [node name="TileMapLayer" parent="." index="0"]
 position = Vector2(0, 25)
 
 [node name="Finish" parent="." index="2"]
-position = Vector2(469, -278)
-scale = Vector2(0.6, 0.6)
+position = Vector2(897, 345)
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." index="3"]
 position = Vector2(0, 25)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://cu4a3gpo3ichk"]
+[gd_scene load_steps=8 format=4 uid="uid://cu4a3gpo3ichk"]
 
 [ext_resource type="PackedScene" uid="uid://dklgvrrl6qvml" path="res://scenes/levels/AAA_LevelTemplate.tscn" id="1_86p5j"]
 [ext_resource type="TileSet" uid="uid://d2c752v8cxt3e" path="res://Ethan Contributions/assets/tilesets/walltiles.tres" id="2_n035j"]
@@ -6,8 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://k210ejdc2pu1" path="res://scenes/vacuum.tscn" id="4_1dnll"]
 [ext_resource type="PackedScene" uid="uid://3jqgvtuyggbp" path="res://scenes/fan.tscn" id="5_8a5ng"]
 [ext_resource type="PackedScene" uid="uid://bo3browincqpy" path="res://scenes/Collectible.tscn" id="6_jq63l"]
+[ext_resource type="PackedScene" uid="uid://b3pk3cx83wd7m" path="res://scenes/spikeball.tscn" id="7_jxb8n"]
 
 [node name="Level0" instance=ExtResource("1_86p5j")]
+backToTitle = true
 
 [node name="Finish" parent="." index="2"]
 position = Vector2(1033, 192)
@@ -52,3 +54,9 @@ sliderStartValue = 0.0
 
 [node name="Area2D" parent="." index="9" instance=ExtResource("6_jq63l")]
 position = Vector2(591, 319)
+
+[node name="spikeball" parent="." index="10" instance=ExtResource("7_jxb8n")]
+position = Vector2(260, 122)
+
+[node name="spikeball2" parent="." index="11" instance=ExtResource("7_jxb8n")]
+position = Vector2(536, 318)

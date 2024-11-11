@@ -89,27 +89,35 @@ func _on_level_5_texture_button_pressed() -> void:
 
 func _on_level_6_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	var lvl6instance = lvl6.instantiate()
-	get_tree().root.add_child(lvl6instance)
+	#var lvl6instance = lvl6.instantiate()
+	#get_tree().root.add_child(lvl6instance)
+	var lvl5instance = lvl5.instantiate()
+	get_tree().root.add_child(lvl5instance)
 	queue_free()
 
 
 func _on_level_7_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	var lvl7instance = lvl7.instantiate()
-	get_tree().root.add_child(lvl7instance)
+	#var lvl7instance = lvl7.instantiate()
+	#get_tree().root.add_child(lvl7instance)
+	var lvl6instance = lvl6.instantiate()
+	get_tree().root.add_child(lvl6instance)
 	queue_free()
 
 
 func _on_level_8_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	var lvl8instance = lvl8.instantiate()
-	get_tree().root.add_child(lvl8instance)
+	#var lvl8instance = lvl8.instantiate()
+	#get_tree().root.add_child(lvl8instance)
+	var lvl7instance = lvl7.instantiate()
+	get_tree().root.add_child(lvl7instance)
 	queue_free()
 
 
 func _on_level_9_texture_button_pressed() -> void:
 	buttonSFX.playing = true
-	var lvl9instance = lvl9.instantiate()
-	get_tree().root.add_child(lvl9instance)
+	#var lvl9instance = lvl9.instantiate()
+	#get_tree().root.add_child(lvl9instance)
+	var lvl8instance = lvl8.instantiate()
+	get_tree().root.add_child(lvl8instance)
 	queue_free()

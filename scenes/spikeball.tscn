@@ -5,9 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://bfskvr0q2nox1" path="res://icon.svg" id="3_lih6w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nh35h"]
-radius = 21.6208
+radius = 17.0
 
-[node name="spikeball" type="RigidBody2D" groups=["ball", "spike"]]
+[node name="spikeball" type="RigidBody2D" groups=["ball", "spike", "spikeball"]]
 z_index = 3
 gravity_scale = 0.0
 contact_monitor = true
