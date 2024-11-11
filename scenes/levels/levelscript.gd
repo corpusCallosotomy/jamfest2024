@@ -8,6 +8,8 @@ var fullNextScene : PackedScene
 var nightVisionArray = preload("res://scenes/nightvisionarray_healed.tscn")
 @export var NV_start_position : Vector2
 
+@export var backToTitle : bool = false
+
 var NVGinstance : Node
 
 var levelChanging = false
@@ -43,8 +45,18 @@ func killLevel():
 
 func _on_finish_level_complete():
 	
-	killLevel()
-
+	if backToTitle == false:
+		killLevel()
+	else:
+		if levelChanging: return
+		levelChanging = true
+		NVGinstance.queue_free()
+		await get_tree().create_timer(1).timeout
+		var menuInstance = load("res://scenes/menus/Menu.tscn").instantiate()
+		get_tree().root.add_child(menuInstance)
+		queue_free()
+	
+	
 
 func _on_finish_title_pressed():
 	if levelChanging: return

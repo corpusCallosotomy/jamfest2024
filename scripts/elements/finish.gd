@@ -119,5 +119,6 @@ func _on_texture_button_mouse_exited():
 
 
 func _on_texture_button_pressed():
-	get_tree().call_group("ball", "resetme")
+	get_tree().call_group("player", "resetme")
 	get_tree().call_group("coin", "resetme")
+	get_tree().call_group("spikeball", "resetme")

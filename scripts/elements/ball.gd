@@ -31,6 +31,9 @@ func _on_body_entered(body):
 
 		print("it was a spike")
 		resetme()
+	if body.is_in_group("player") and self.is_in_group("spike"):
+		resetme()
+		get_tree().call_group("spikeball", "resetme")
 	else:
 		#var ImpactParticle = preload("res://scenes/ImpactParticle.tscn")
 		var instance = ImpactParticle.instantiate()
@@ -46,4 +49,6 @@ func _integrate_forces(state):
 
 func resetme():
 	get_tree().call_group("coin", "resetme")
+	#if self.is_in_group("player"):
+	#	get_tree().call_group("spikeball", "resetme")
 	reset_state = true

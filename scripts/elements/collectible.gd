@@ -15,13 +15,13 @@ func _process(_delta: float) -> void:
 
 		
 func resetme():
-	print("Reseting Coin")
+	print("Resetting Coin")
 	collected=false
 	self.visible=true
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("ball"):
+	if body.is_in_group("player"):
 		if collected==false: 
 			
 			var CoinParticle = preload("res://scenes/CoinParticle.tscn")
